@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" >
+   
+   
+      <item
+        android:id="@+id/sendmessageinbox"
+        android:orderInCategory="100"
+     
+        android:title="@string/sendmsg"
+        app:showAsAction="never"/>
+      
+       <item
+        android:id="@+id/sortingdesc"
+        android:orderInCategory="100"
+     
+        android:title="@string/sort_rev_order"
+        app:showAsAction="never"/>
+       
+        <item
+        android:id="@+id/sortingasc"
+        android:orderInCategory="100"
+     
+        android:title="@string/sort_nor_order"
+        app:showAsAction="never"/>
+  
+  
+   
+</menu>

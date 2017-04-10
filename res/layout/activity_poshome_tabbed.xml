@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_poshome_tabbed"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ffffff"
+    tools:context="com.kitever.pos.fragment.POSHomeTabbedActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutPosFragmentHolder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:paddingBottom="2dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/footer_menu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/footer_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bottom_tab_background">
+
+        <TextView
+            android:id="@+id/tvPosLeftArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/footer_height"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@color/bottom_tab_background"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="@string/left_arrow"
+            android:textColor="@color/green_home"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvPosRightArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/footer_height"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/bottom_tab_background"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="@string/right_arrow"
+            android:textColor="@color/green_home"
+            android:textSize="14sp" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/posHomeTabs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tvPosRightArrow"
+            android:layout_toRightOf="@+id/tvPosLeftArrow"
+            android:layout_toStartOf="@+id/tvPosRightArrow"
+            android:background="@color/bottom_tab_background"
+            android:foregroundGravity="center"
+            android:minHeight="@dimen/footer_height"
+            app:tabMode="scrollable"
+            app:tabTextAppearance="@style/MineCustomTabText" />
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

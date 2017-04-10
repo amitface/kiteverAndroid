@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="#fff" >
+
+    <RelativeLayout
+        android:id="@+id/agf_toplay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@drawable/header_bg" >
+
+        <TextView
+            android:id="@+id/agf_headertxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:text="Create new members"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/heardertext_size"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/agf_backbuttonlay"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp" >
+
+            <ImageView
+                android:id="@+id/agf_backicon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/left_arrow" />
+
+            <TextView
+                android:id="@+id/agf_backbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/agf_backicon"
+                android:text="Back"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/agf_donebuttonlay"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:gravity="right" >
+
+            <TextView
+                android:id="@+id/agf_donebutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Done"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/agf_doneicon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="3dp"
+                android:layout_toRightOf="@id/agf_donebutton"
+                android:src="@drawable/back_btn" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/agf_toplay"
+        android:layout_above="@+id/bottom"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/selectedcontact_lv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@android:color/transparent"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp" >
+        </ListView>
+    </LinearLayout>
+
+    
+    <LinearLayout 
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        >
+        <include layout="@layout/create_group_footer"/>
+        
+    </LinearLayout>
+    
+</RelativeLayout>

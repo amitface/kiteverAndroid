@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuOrders"
+        android:showAsAction="never"
+        android:title="Orders" />
+    <item
+        android:id="@+id/menuPayments"
+        android:showAsAction="never"
+        android:title="Payments" />
+    <item
+        android:id="@+id/menuCredits"
+        android:showAsAction="never"
+        android:title="Credits" />
+    <item
+        android:id="@+id/menuInvoice"
+        android:showAsAction="never"
+        android:title="Invoice" />
+
+</menu>

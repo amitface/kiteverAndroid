@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"   
+    android:orientation="vertical"
+    tools:context="com.kitever.sendsms.AddEmailManuallyActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        android:weightSum="1.5" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:visibility="gone">
+
+            <Spinner
+                android:id="@+id/mail_countryCodeSpinner"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/mail_countryNameTextView"
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:background="@drawable/rectangle_shape"
+                android:clickable="false"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:gravity="center"
+                android:hint="+91"
+                android:maxLength="20"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="16sp"                
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/mail_editText1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/tableborder"
+            android:ems="20"
+            android:hint="Email"
+            android:inputType="textWebEmailAddress"
+            android:maxLength="50"
+            android:padding="8dp"
+            android:textColor="#000000" >
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/mail_addBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selectorbackground2"
+        android:gravity="center"
+        android:text="ADD TO LIST"
+        android:textColor="#F5F5F5" />
+
+    <ListView
+        android:id="@+id/mail_listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/table_color"
+        android:dividerHeight="1px"
+        android:fastScrollEnabled="true" >
+    </ListView>
+
+    <Button
+        android:id="@+id/mail_doneBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/verticalLayout"
+        android:background="@drawable/selectorbackground2"
+        android:gravity="center"
+        android:text="DONE"
+        android:textColor="#F5F5F5" />
+
+</LinearLayout>

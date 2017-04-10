@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/frndattch_imgfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/attch_img"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:gravity="left"
+            android:scaleType="centerCrop"
+            android:src="@drawable/no_video" />
+
+        <ProgressBar
+            android:id="@+id/attch_img_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+        
+         <ProgressBar
+            android:id="@+id/attch_image_progress2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="0dp"
+            android:layout_centerHorizontal="true"
+            android:indeterminate="false"
+            android:max="101"
+            android:visibility="gone"
+            android:progress="0"
+            android:layout_gravity="center"
+            android:progressDrawable="@drawable/circular_progress_bar"
+            android:layout_centerInParent="true" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

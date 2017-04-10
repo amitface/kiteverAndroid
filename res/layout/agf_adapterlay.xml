@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:id="@+id/agf_userlay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/transparent" >
+
+        <RelativeLayout
+            android:id="@+id/agf_userpiclay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent" >
+
+         <!--    <ImageView
+                android:id="@+id/agf_userpic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profileimg" /> -->
+                
+                
+                <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+               <sms19.inapp.msg.CircularImageView
+                android:id="@+id/agf_userpic"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profileimg" />
+
+                <ImageView
+                    android:id="@+id/onlineimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="5dp"
+                    
+                    android:src="@drawable/offline" />
+            </FrameLayout>
+                
+                
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/agf_user_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            android:src="@drawable/cross_icon" />
+
+        <TextView
+            android:id="@+id/agf_usernametext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@id/agf_user_delete"
+            android:layout_toRightOf="@id/agf_userpiclay"
+            android:background="@android:color/transparent"
+            android:text="Rajani"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+<RelativeLayout
+    android:id="@+id/custom_status_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_below="@id/agf_usernametext"
+    android:layout_toLeftOf="@+id/agf_user_delete"
+    android:layout_toRightOf="@+id/agf_userpiclay"
+    android:focusable="true"
+    >
+            <sms19.inapp.msg.imoze.EmojiconEditText
+            android:id="@+id/agf_custom_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:background="@android:color/transparent"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#000000"
+            android:layout_toLeftOf="@+id/agf_userlastseen"
+            android:ellipsize="end"
+            android:layout_alignParentLeft="true"           
+            android:editable="false"
+            
+            android:textSize="12sp" />
+    <TextView
+            android:id="@+id/agf_userlastseen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:background="@android:color/transparent"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="12sp" />
+</RelativeLayout>
+        
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/bottomblanklay"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/agf_userlay"
+        android:background="#c4bca7" />
+
+</RelativeLayout>

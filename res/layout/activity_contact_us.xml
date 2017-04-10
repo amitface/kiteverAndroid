@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_contact_us"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:orientation="vertical"
+    android:background="@color/listview_background"
+    tools:context="sms19.listview.newproject.ContactUs">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:background="@drawable/editbox_bottom"
+        android:hint="Subject"
+        android:padding="5dp"
+        android:ems="10"
+        android:id="@+id/contact_subject" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:background="@drawable/editbox_bottom"
+        android:ems="10"
+        android:lines="5"
+        android:hint="Message"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/contact_msg" />
+
+    <Button
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:background="@drawable/block_user"
+        android:id="@+id/submit" />
+</LinearLayout>

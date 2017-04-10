@@ -1,0 +1,497 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/school"
+ 
+    android:orientation="vertical"
+    tools:context="sms19.listview.newproject.EarnAndRefer" >
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      
+        android:gravity="top" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:text="Refer Friend"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/refefndlist"
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:layout_weight="1"
+            android:background="#C0C0C0"
+            android:gravity="center"
+            android:text="Referred Friend"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+  
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:id="@+id/dynamic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/hjkj"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/ReferImgPicContact"
+                    android:paddingLeft="2dp"
+                    android:text="Pick Contacts from Phonebook"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/ReferImgPicContact"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/contactnew" />
+            </RelativeLayout>
+
+            <TableRow
+                android:id="@+id/tableRowOne"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/editRefer1"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/whitebackgroundcurved"
+                    android:ems="10"
+                       android:gravity="center"
+                     android:padding="5dp"
+                    android:hint="Name" >
+
+                    <requestFocus />
+                </EditText>
+
+                <EditText
+                    android:id="@+id/editRefer2"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                       android:gravity="center"
+                    android:padding="5dp"
+                    android:background="@drawable/whitebackgroundcurved"
+                    android:ems="10"
+                    android:hint="Mobile"
+                    android:inputType="number"
+                    android:maxLength="10" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowTwo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" >
+
+                <EditText
+                    android:id="@+id/editRefer3"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/whitebackgroundcurved"
+                    android:ems="10" 
+                      android:gravity="center"
+                    android:hint="Name" />
+
+                <EditText
+                    android:id="@+id/editRefer4"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/whitebackgroundcurved"
+                    android:ems="10"
+                       android:gravity="center"
+                    android:hint="Mobile"
+                    android:inputType="number"
+                    android:maxLength="10" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowThird"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" >
+
+                <EditText
+                    android:id="@+id/editRefer5"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/whitebackgroundcurved"
+                    android:ems="10"
+                       android:gravity="center"
+                     android:padding="5dp"
+                    android:hint="Name" />
+
+                <EditText
+                    android:id="@+id/editRefer6"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                     android:padding="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                       android:gravity="center"
+                    android:background="@drawable/whitebackgroundcurved"
+                    android:ems="10"
+                    android:hint="Mobile"
+                    android:inputType="number"
+                    android:maxLength="10" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowFourth"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" >
+
+                <EditText
+                    android:id="@+id/editRefer7"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                     android:padding="5dp"
+                    android:layout_weight="1"
+                       android:gravity="center"
+                    android:background="@drawable/whitebackgroundcurved"
+                    android:ems="10"
+                    android:hint="Name" />
+
+                <EditText
+                    android:id="@+id/editRefer8"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/whitebackgroundcurved"
+                    android:ems="10"
+                       android:gravity="center"
+                     android:padding="5dp"
+                    android:hint="Mobile"
+                    android:inputType="number"
+                    android:maxLength="10" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowFifth"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" >
+
+                <EditText
+                    android:id="@+id/editRefer9"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/whitebackgroundcurved"
+                    android:ems="10"
+                       android:gravity="center"
+                     android:padding="5dp"
+                    android:hint="Name" />
+
+                <EditText
+                    android:id="@+id/editRefer10"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                       android:gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/whitebackgroundcurved"
+                    android:ems="10"
+                     android:padding="5dp"
+                    android:hint="Mobile"
+                    android:inputType="number"
+                    android:maxLength="10" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowSixth"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" >
+
+                <EditText
+                    android:id="@+id/editRefer11"
+                    android:layout_width="150dp"
+                       android:gravity="center"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/whitebackgroundcurved"
+                    android:ems="10"
+                     android:padding="5dp"
+                    android:hint="Name" />
+
+                <EditText
+                    android:id="@+id/editRefer12"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/whitebackgroundcurved"
+                    android:ems="10"
+                       android:gravity="center"
+                    android:hint="Mobile"
+                     android:padding="5dp"
+                    android:inputType="number"
+                    android:maxLength="10" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowSeventh"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" >
+
+                <EditText
+                    android:id="@+id/editRefer13"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                     android:padding="5dp"
+                    android:background="@drawable/whitebackgroundcurved"
+                    android:ems="10"
+                       android:gravity="center"
+                    android:hint="Name" />
+
+                <EditText
+                    android:id="@+id/editRefer14"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/whitebackgroundcurved"
+                    android:ems="10"
+                       android:gravity="center"
+                     android:padding="5dp"
+                    android:hint="Mobile"
+                    android:inputType="number"
+                    android:maxLength="10" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowEirth"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" >
+
+                <EditText
+                    android:id="@+id/editRefer15"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1" 
+                      android:gravity="center"
+                    android:background="@drawable/whitebackgroundcurved"
+                    android:ems="10"
+                     android:padding="5dp"
+                    android:hint="Name" />
+
+                <EditText
+                    android:id="@+id/editRefer16"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/whitebackgroundcurved"
+                    android:ems="10"
+                       android:gravity="center"
+                     android:padding="5dp"
+                    android:hint="Mobile"
+                    android:inputType="number"
+                    android:maxLength="10" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowNinth"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" >
+
+                <EditText
+                    android:id="@+id/editRefer17"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                       android:gravity="center"
+                    android:layout_weight="1"
+                     android:padding="5dp"
+                    android:background="@drawable/whitebackgroundcurved"
+                    android:ems="10"
+                    android:hint="Name" />
+
+                <EditText
+                    android:id="@+id/editRefer18"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/whitebackgroundcurved"
+                    android:ems="10"
+                       android:gravity="center"
+                     android:padding="5dp"
+                    android:hint="Mobile"
+                    android:inputType="number"
+                    android:maxLength="10" />
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowtenth"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" >
+
+                <EditText
+                    android:id="@+id/editRefer19"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/whitebackgroundcurved"
+                    android:ems="10"
+                     android:padding="5dp"
+                    android:hint="Name" />
+
+                <EditText
+                    android:id="@+id/editRefer20"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/whitebackgroundcurved"
+                    android:ems="10"
+                    android:gravity="center"
+                     android:padding="5dp"
+                    android:hint="Mobile"
+                    android:inputType="number"
+                    android:maxLength="10" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <ImageView
+                android:id="@+id/more"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/ic_launcher"
+                android:visibility="invisible" />
+             <Button
+        android:id="@+id/referafriendbtn"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/backgroundbtn"
+        android:gravity="center"
+        android:text="Refer"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+        </LinearLayout>
+        
+    </ScrollView>
+
+   
+
+</LinearLayout>

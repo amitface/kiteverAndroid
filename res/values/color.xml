@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- DESIGN FIRST -->
+    <color name="actionbar_background">#066966</color>
+    <color name="actionbar_text">#FFFFFF</color>
+    <!-- DESIGN FIRST END-->
+
+
+    <!-- DESIGN FIRST -->
+    <color name="actionbar_background_sec">#066966</color>
+    <color name="actionbar_text_sec">#FFFFFF</color>
+    <!-- DESIGN FIRST END-->
+
+
+    <color name="actionbar_background_2">#0867A3</color>
+      <color name="new_actionbar_background">#0867A3</color>
+      <color name="new_actionbar_background_strip">#E46C22</color>
+      <color name="chat_bg">#EEEAE4</color>
+       <!-- Bottom tab color -->
+        <color name="bottom_tab_background">#616161</color>
+       <color name="tab_selected_color">#F1F1F1</color>
+       <color name="tab_unselected_color">#B0BEC5</color>
+    <!--   <color name="green_home">##9E9E9E</color>#757575 -->
+    <color name="green_home">#ffffff</color>
+    <color name="table_color">#99EBEBEB</color>
+      
+       <color name="white_trasparent">#40FFFFFF</color>
+       <color name="black_trasparent">#40000000</color>
+       <color name="white">#FFFFFF</color>
+       <color name="transparent">#00000000</color>
+
+    <color name="black">#000000</color>
+    <color name="orange">#FF972E</color>
+    <color name="yellow">#F5B835</color>
+    <color name="yellow2">#FFFD7A</color>
+    <color name="horizontal_vertical">#8f8f8f</color>
+    <color name="horizontal_divider">#8f8f8f</color>
+    <color name="sidemenu_sepraptor">#5E5E5E</color>
+    <color name="edittext_underline_gray">#808080</color>
+    
+      <color name="tabs_color"> #81D4FA </color>
+      
+        <color name="actionbar_bg">#0867A3 </color>
+        <color name="checked_text_color">#E77129 </color>
+      
+       <color name="chat_action_bar_bg"> #006966 </color>
+       <color name="divider_color">#F5F5F4 </color>
+       
+        <color name="color_primary">#006966</color>
+         <!-- new theme color -->
+    <color name="theme_primary_color">#006966</color>
+    <color name="tran_balck">#10000000</color>
+    <!-- <color name="bottom_text">#0D47A1</color> -->
+    <color name="bottom_text">#066966</color> 
+    <color name="bottom_icon">#311B92</color>
+    <color name="color1">#656565</color>
+    <color name="color2">#E77129</color>
+
+    <color name="count_background_color">#0BA4E0</color>
+    <color name="count_font_color">#FFFFFF</color>
+
+    <!-- ListView design -->
+
+    <color name="listview_background">#F5F5F5</color>
+    <color name="list_divider_color">#E0E0E0</color>
+    <color name="listview_font_color">#757575</color>
+    <color name="listview_category_color">#536820</color>
+    <color name="listview_brand_color">#5B342F</color>
+    <color name="listview_image_color">#EEEEEE</color>
+
+
+</resources>

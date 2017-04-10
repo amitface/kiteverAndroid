@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="55dp"
+    android:padding="1dp"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/edit_text_background"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="2dp">
+
+        <TextView
+            android:id="@+id/tvPurchasePaymentDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="2dp"
+            android:text="Date"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvPurchasePaymentMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="2dp"
+            android:textSize="12sp"
+            android:text="Date" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvPurchasePaymentVendor"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Vendor"
+        android:layout_gravity="center"
+        android:paddingLeft="2dp"
+        android:textSize="12sp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tvPurchasePaymentPoNum"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Name"
+        android:layout_gravity="center"
+        android:paddingLeft="4dp"
+        android:textSize="12sp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tvPurchasePaymentInvoice"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Invoice"
+        android:layout_gravity="center"
+        android:paddingLeft="2dp"
+        android:textSize="12sp"
+        android:gravity="center" />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:paddingLeft="2dp"
+        android:gravity="right"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TableRow android:gravity="left">
+                <TextView
+                    android:id="@+id/tvPurchasePaymentLabelBill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bill"
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:id="@+id/tvPurchasePaymentBill"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:textSize="12sp"
+                    android:gravity="right" />
+            </TableRow>
+            <TableRow android:gravity="left">
+
+                <TextView
+                    android:id="@+id/tvPurchasePaymentLabelPaid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Paid"
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvPurchasePaymentPaid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="000"
+                    android:textSize="12sp"
+                    android:gravity="right" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>

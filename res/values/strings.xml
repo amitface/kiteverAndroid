@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="EditProfile">Edit Profile:</string>
+    <string name="upcomingevent">Coming Soon</string>
+    <string name="more">Coming Soon</string>
+    <string name="SplashDemo">SplashScreenDemo</string>
+    <string name="BalanceInfo">Balance Info:</string>
+    <string name="SmsREports">SMS REPORTS:</string>
+    <string name="TemplateInfo">Template:</string>
+    <string name="TemplateList">Template List:</string>
+    <string name="Termcondition">Term and Condition</string>
+    <string name="privacypolicy">Privacy Policy</string>
+    <string name="includeExclude">Include/Exclude Prompt:</string>
+    <string name="notification">Notification</string>
+    <!-- for menu -->
+    <string name="action_settings">settings</string>
+    <string name="Today">Today</string>
+    <string name="second">1 Day before delivery</string>
+    <string name="third">2 Day before delivery</string>
+    <string name="four">3 Day before delivery</string>
+    <string name="five">4 Day before delivery</string>
+    <string name="six">5 Day before delivery</string>
+    <string name="seven">6 Day before delivery</string>
+    <string name="menuEditProfile">Profile</string>
+    <string name="menuNotification">Notification</string>
+    <string name="menuCalender">Calendar</string>
+    <string name="menuTransaction">Transactions</string>
+    <string name="menuScheduleMsg">Scheduled Message</string>
+    <string name="menuTermsCondition">Terms and Privacy</string>
+    <string name="HowTOUse">How to Use</string>
+    <string name="menunotify">Notification</string>
+    <string name="actionbutton">hELLO</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_transaction">Transaction</string>
+    <string name="title_activity_edit_profile">EditProfile</string>
+    <string name="title_activity_upcoming_event">UpcomingEvent</string>
+    <string name="title_activity_more">More</string>
+    <string name="title_activity_loginpage">Login Page</string>
+    <string name="transactiontext">Transaction:</string>
+    <string name="title_activity_buy_credit_home">BuyCreditHome</string>
+    <string name="title_activity_sms_reports">SmsReports</string>
+    <string name="title_activity_template_home">TemplateHome</string>
+    <string name="title_activity_template_list">TemplateList</string>
+    <string name="title_activity_terms_and_condition">TermsAndCondition</string>
+    <string name="title_activity_privacy_policy">PrivacyPolicy</string>
+    <string name="title_activity_include_exclude_prompt">IncludeExcludePrompt</string>
+    <string name="title_activity_notification">Notification</string>
+    <string name="user_credit_balance_str">Your customers owe you</string>
+    <string name="discount_switch">Discount Percent/Amount</string>
+    <integer name="edit_view_length">50</integer>
+    <string name="home_message">&#xe921;</string>
+    <string name="home_chats">&#xe92d;</string>
+    <string name="home_contacts">&#xe930;</string>
+    <string name="home_templates">&#xe920;</string>
+    <string name="home_unlock">&#xe927;</string>
+    <string name="home_reports">&#xf2b7;</string>
+    <string name="home_pos">&#xe925;</string>
+    <string name="microsite_icon">&#xe941;</string>
+    <string name="cloud_icon">&#xe942;</string>
+    <string name="purchase_biller">&#xe920;</string>
+    <string name="purchase_invoice">&#xf0f6;</string>
+
+    <string name="double_tick">&#xe946;</string>
+    <string name="single_tick">&#xe5ca;</string>
+    <string name="cross_tick">&#xe91e;</string>
+
+    <string-array name="homeIcons">
+        <item>&#xe921;</item>
+        <!-- sms -->
+        <item>&#xe92d;</item>
+        <!-- chat -->
+        <item>&#xe930;</item>
+        <!-- contacts -->
+        <item>&#xe920;</item>
+        <!-- templates -->
+        <item>&#xe927;</item>
+        <!-- unloack -->
+        <item>&#xea84;</item>
+        <!-- report -->
+        <item>&#xe925;</item>
+        <!-- pos -->
+    </string-array>
+    <string-array name="posIcons">
+        <item>&#xe925;</item>
+        <!-- category -->
+        <item>&#xe922;</item>
+        <!-- product -->
+        <item>&#xf2bc;</item>
+        <!-- contacts -->
+        <item>&#xe92b;</item>
+        <!-- ortder -->
+        <item>&#xe90a;</item>
+        <!-- credit -->
+        <item>&#xe932;</item>
+        <!-- payment -->
+        <item>&#xe923;</item>
+        <!-- tax -->
+        <item>&#xe92c;</item>
+        <!-- brand -->
+        <item>&#xe903;</item>
+        <!-- invoice -->
+        <item>&#xf085;</item>
+        <!-- Settings -->
+    </string-array>
+
+    <!-- order Title Ascending order-->
+    <string name="titledateAsc">Date &#xe944;</string>
+    <string name="titleorderAsc">Order &#xe944;</string>
+    <string name="titlecustomerAsc">Name &#xe944;</string>
+    <string name="titleamtAsc">Amount &#xe944;</string>
+    <string name="titlereceiptAsc">Receipt &#xe944;</string>
+    <string name="titlebillAsc">Bill &#xe944;</string>
+    <string name="titlepaidAsc">Paid &#xe944;</string>
+    <string name="titlecreditAsc">Credit &#xe944;</string>
+    <string name="titleinvoiceAsc">Invoice &#xe944;</string>
+
+    <!-- order Title Desscending order-->
+    <string name="titledateDesc">Date &#xe943;</string>
+    <string name="titleorderDesc">Order &#xe943;</string>
+    <string name="titlecustomerDesc">Name &#xe943;</string>
+    <string name="titleamtDesc">Amount &#xe944;</string>
+    <string name="titlereceiptDesc">Receipt &#xe943;</string>
+    <string name="titlebillDesc">Bill &#xe943;</string>
+    <string name="titlepaidDesc">Paid &#xe943;</string>
+    <string name="titlecreditDesc">Credit &#xe943;</string>
+    <string name="titleinvoiceDesc">Invoice &#xe943;</string>
+
+
+    <string name="homeicon">&#xe933;</string>
+    <string name="dashboardicon">&#xe93c;</string>
+    <string name="producticon">&#xe937;</string>
+    <string name="ordericon">&#xe92b;</string>
+    <string name="paymenticon">&#xe938;</string>
+    <string name="crediticon">&#xe90a;</string>
+    <string name="invoice_icon">&#xe903;</string>
+    <string name="customer_icon">&#xe930;</string>
+    <string name="brand_icon">&#xe923;</string>
+    <string name="tax_icon">&#xe93d;</string>
+    <string name="other_charges_icon">&#xe940;</string>
+    <string name="category_icon">&#xe93e;</string>
+    <string name="setting_icon">&#xe935;</string>
+
+    <string name="theme_icon">&#xe924;</string>
+
+    <!-- <string name="coinsicon">&#xe90f;</string> -->
+    <string name="coinsicon">&#xe850;</string>
+    <string name="rsicon">&#xe911;</string>
+
+    <string name="price_with_icon">Price[&#xe911;]</string>
+    <string name="totalprice_with_icon"> Total Price[&#xe911;]</string>
+
+    <string name="done_txt"> &#xe5ca; </string>
+
+    <string name="tools_icon"> &#xe900; </string>
+    <string name="dollor_icon">&#xf02c;</string>
+
+    <!-- <string name="topupicon">&#xe910;</string> -->
+
+    <string name="topupicon">&#xe91d;</string>
+    <string name="left_nav_open">&#xe90e;</string>
+    <string name="left_nav_close">&#xe90d;</string>
+    <string name="add_to_cart">&#xe92b;</string>
+    <string name="cart_basket">&#xe92b;</string>
+    <string name="trash_icon">&#xe90f;</string>
+    <string name="cart_plus">&#xe3ba;</string>
+    <string name="cart_plus_product">Add &#xe3ba;</string>
+    <string name="cart_minus">&#xe15d;</string>
+    <string name="check_icon">&#xe5ca;</string>
+    <string name="cross_icon">&#xe91e;</string>
+    <string name="clock_icon">&#xe914;</string>
+    <string name="cancel_icon">&#xe5c9;</string>
+    <string name="check_circle">&#xe93f;</string>
+    <string name="no_record">&#xe91b; </string>
+    <string name="no_record_txt">No Record Found</string>
+    <string name="up_arrow">&#xe916;</string>
+    <string name="down_arrow">&#xe917;</string>
+    <string name="left_arrow">&#xe913;</string>
+    <string name="right_arrow">&#xe90e;</string>
+    <string name="edit_pen">&#xe929;</string>
+    <string name="delete_moon">&#xe90f;</string>
+    <string name="basket_plus">&#xe907;</string>
+    <string name="dash_board">&#xe919a;</string>
+    <string name="sms_icon">&#xe90d;</string>
+    <string name="mail_icon">&#xe91c;</string>
+    <string name="storage_icon">&#xe92f;</string>
+
+    <!-- FB ID -->
+    <string name="app_id">663994403712320</string>
+    <string name="app_name">Kitever</string>
+    <string name="showreports">Reports</string>
+    <string name="title_activity_buy_credit_payment_details">BuyCreditPaymentDetails</string>
+    <string name="title_activity_service__loading__page">Loading</string>
+
+    <string name="delete_category_alert">All the categories and products under this category also be deleted. Do you want to delete it ?</string>
+    <string name="delete_brand_alert">All the products under this brand also be deleted. Do you want to delete it ? </string>
+
+    <!-- payment gatway key -->
+    <string name="access_code">Access Code</string>
+    <string name="pay_opt">Payment Option</string>
+    <string name="card_type">Card Type</string>
+    <string name="pay_button">Pay</string>
+    <string name="next_button">Next</string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="country">Country</string>
+    <string name="billingAddress">Billing Address</string>
+    <string name="deliveryAddress">Delivery Address</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="zip">Zip</string>
+    <string name="tel">Telephone</string>
+    <string name="email">Email Id</string>
+    <string name="merchant_id">Merchant Id</string>
+    <string name="currency">Currency</string>
+    <string name="amount">Amount</string>
+    <string name="redirect_url">Redirect Url</string>
+    <string name="cancel_url">Cancel Url</string>
+    <string name="card_number">Card Number</string>
+    <string name="card_cvv">Card CVV</string>
+    <string name="expiry_month">Expiry Month</string>
+    <string name="expiry_year">Expiry Year</string>
+    <string name="card_details">Card Details</string>
+    <string name="issuing_bank">Issuing Bank</string>
+    <string name="rsa_url">RSA Key Url</string>
+    <string name="title_activity_calender">CalenderActivity</string>
+    <string name="title_activity_jugad">JUGAD</string>
+    <string name="title_activity_inbox">Inbox</string>
+    <string name="title_activity_earn_and_refer">EarnAndRefer</string>
+    <string name="refer">Refer and Earn</string>
+    <string name="title_activity_refer_people_list">ReferPeopleList</string>
+    <string name="refresh">Refresh</string>
+    <string name="sendmsg">Send Message</string>
+    <string name="delete">Delete all chat</string>
+    <string name="title_activity_send_message_inbox">SendMessageInbox</string>
+    <string name="title_activity_send_msg_chatgroup">SendMsgChatgroup</string>
+    <string name="sendsymbol">...</string>
+    <string name="title_activity_template__grid">Template_Grid</string>
+    <string name="title_activity_emergency">Emergency</string>
+    <string name="sort_nor_order">Sort first to last</string>
+    <string name="sort_rev_order">Sort last to first</string>
+    <string name="title_activity_audio">Audio</string>
+    <string name="changePassword">Change Password</string>
+    <string name="chat">Chat</string>
+    <string name="contact">Contact</string>
+    <string name="contact2">Contacts</string>
+    <string name="no_media_file_available"> No media file available.</string>
+    <string name="add_group">Add Group</string>
+    <string name="add_contact">Add Contact</string>
+    <string name="tvUpgrade"><u>Upgrade</u></string>
+    <string name="Topuptext"><u>Top Up</u></string>
+    <string name="action_search">Search contacts</string>
+    <string name="title_activity_posinvoice_pdf_viewer">CRMInvoicePdfViewer</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_posinvoice_pdf_view">CRMInvoicePdfView</string>
+    <string name="title_activity_pos_customer_list">CRMCustomerList</string>
+    <string name="title_activity_pos_cart">CRMCart</string>
+    <string name="floating_bottom_padding">65</string>
+    <string name="title_activity_send_sms_mail">SendSmsMail</string>
+    <string name="title_activity_select_email">SelectEmailActivity</string>
+    <string name="title_activity_add_email_manually">AddEmailManuallyActivity</string>
+    <string name="title_activity_second_sms_mail_report">SecondSmsMailReport</string>
+    <string name="title_activity_posother_charge_screen">CRMOtherChargeScreen</string>
+    <string name="title_activity_posother_charge_add">CRMOtherChargeAdd</string>
+    <string name="title_activity_schedule">Schedule</string>
+    <string name="title_activity_poshome_view_pager">mCRM Dashboard</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="volleyError">Cannot connect to the server, please try again later.</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_title">search contacts</string>
+    <string name="label_subject">subject</string>
+    <string name="label_message">Message</string>
+    <string name="label_signature">Signature</string>
+
+    <string name="menu_save">Save</string>
+    <string name="menu_load">Load</string>
+    <string name="menu_dark_theme">Dark theme</string>
+    <string name="menu_light_theme">Light theme</string>
+    <string name="menu_single_toolbar">Single toolbar</string>
+    <string name="menu_split_toolbar">Split toolbar</string>
+    <string name="menu_fragment">Use Fragment</string>
+    <string name="menu_activity">Use Activity</string>
+
+    <string name="save_as">Save as…</string>
+    <string name="save_as_success">Text saved as %s</string>
+    <string name="save_as_failure">Text could not be saved: %s</string>
+    <string name="load_failure_1">This isn\'t a valid rich text editor file</string>
+    <string name="load_failure_2">This isn\'t a valid rich text editor file: %s</string>
+
+    <string name="permission_denied">Permission denied</string>
+    <string name="permission_denied_storage">Without this permission you can\'t insert camera pictures. Are you sure you want to deny this permission?</string>
+    <string name="permission_deny">Deny</string>
+    <string name="permission_retry">Re-try</string>
+
+    <string name="no_file_picker">There\'s no app installed to handle picking a directory: %s</string>
+    <string name="title_activity_user_cart">UserCartActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+</resources>

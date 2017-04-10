@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+
+    <ListView
+        android:id="@+id/gplist"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_above="@+id/gpsendmsg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/selectagp"
+        android:layout_marginTop="7dp"
+        android:divider="#777C7D"
+        android:dividerHeight="1dp"
+        android:padding="5dp"
+        android:scrollbars="horizontal" >
+    </ListView>
+
+    <CheckBox
+        android:id="@+id/selectagp"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button2"
+        android:text="Select All"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/searchgptext"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/grouprefesh"
+        android:background="#066966"
+        android:clickable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:gravity="center"
+        android:textColor="#000000" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageView
+        android:id="@+id/imageSCgp"
+        android:layout_width="32dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@android:drawable/ic_menu_search"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/button2"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/searchgptext"
+        android:layout_toLeftOf="@+id/imageView2"
+        android:layout_toRightOf="@+id/imageView1"
+        android:background="#066966"
+        android:gravity="center_vertical"
+        android:paddingLeft="4dp"
+        android:text="Contacts"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/searchgptext"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/grouprefesh"
+        android:layout_toRightOf="@+id/backn"
+        android:background="#066966"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="fill_vertical"
+        android:text="Groups"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/gpsendmsg"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#066966"
+        android:gravity="center"
+        android:text="Send Message"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_above="@+id/gplist"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/button2"
+        android:background="#066966"
+        android:padding="6dp" />
+
+    <TextView
+        android:id="@+id/gotocontacts"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_above="@+id/gplist"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/searchgptext"
+        android:layout_toRightOf="@+id/imageView2"
+        android:background="#066966"
+        android:gravity="center_vertical"
+        android:paddingLeft="4dp"
+        android:text="Groups"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/grouprefesh"
+        android:layout_width="25dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/gotocontacts"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/refresh"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_above="@+id/gplist"
+        android:layout_below="@+id/searchgptext"
+        android:layout_centerHorizontal="true"
+        android:background="#066966"
+        android:padding="6dp" />
+
+    <ImageView
+        android:id="@+id/backn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#066966"
+        android:padding="7dp"
+        android:src="@drawable/arrow_back" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button2"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:text="TextView" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:background="#F26121"
+            android:text="TextView" />
+    </LinearLayout>
+
+</RelativeLayout>

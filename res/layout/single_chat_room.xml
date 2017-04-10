@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/chat_bg"
+    android:clickable="true"
+    tools:context="com.example.symlydemo.MainActivity$PlaceholderFragment">
+
+    <LinearLayout
+        android:id="@+id/chatbottomlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/un_block_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/block_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/block_and_report" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="8dp"
+                    android:background="@android:color/white"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/camera_and_sendlayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/emojicons"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/message_send_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/touchfeedback"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_send_black_24dp"
+                            android:text=""
+                            android:textColor="@android:color/black"
+                            android:textSize="12sp"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/attachBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/touchfeedback"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_attachment_black_24dp"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/moze_delete_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imozebtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/chat_msg"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/touchfeedback"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_insert_emoticon_black_24dp" />
+
+                        <ImageView
+                            android:id="@+id/delete_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/chat_msg"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/touchfeedback"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_delete_black_24dp"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <sms19.inapp.msg.imoze.EmojiconEditText
+                        android:id="@+id/chat_msg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/moze_delete_layout"
+                        android:layout_toLeftOf="@id/camera_and_sendlayout"
+                        android:layout_toRightOf="@id/moze_delete_layout"
+                        android:layout_toStartOf="@id/camera_and_sendlayout"
+                        android:background="@android:color/transparent"
+                        android:hint="Type your message..."
+                        android:inputType="none"
+                        android:maxLines="5"
+                        android:minHeight="40dp"
+                        android:paddingBottom="3dp"
+                        android:paddingEnd="15dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:privateImeOptions="nm"
+                        android:text=""
+                        emojicon:emojiconSize="28sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/emojicons"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_below="@id/chat_msg"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/creadit_sms_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/border_black"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="2dp"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/user_sms_creadit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/time_select"
+                            android:layout_toRightOf="@+id/check_box"
+                            android:gravity="center_vertical"
+                            android:padding="1dp"
+                            android:layout_gravity="center"
+                            android:text="Send undelivered chats in 0:05 Min"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/time_select"
+                            android:layout_width="wrap_content"
+                            android:layout_height="26dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:padding="4dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:src="@drawable/ic_edit_sms"                             />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".3">
+                            <CheckBox
+                                android:id="@+id/check_box"
+                                android:layout_width="wrap_content"
+                                android:layout_height="24dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:padding="4dp"
+                                android:layout_gravity="start"
+                                android:text="Sms"
+                                android:textSize="12sp" />
+                        </FrameLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".3">
+
+                            <CheckBox
+                                android:id="@+id/email_check_box"
+                                android:layout_width="wrap_content"
+                                android:layout_height="24dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:padding="4dp"
+                                android:text="Mail"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/email_time_select"
+                                android:layout_width="wrap_content"
+                                android:layout_height="24dp"
+                                android:padding="2dp"
+                                android:text="(Edit)"
+                                android:textSize="12sp"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/block_message_layout_bottm"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="You can&apos;t send messages to this group because you&apos;re no longer a participant"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/chatbottomlay">
+
+        <LinearLayout
+            android:id="@+id/search_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <include layout="@layout/search_view_new" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/search_header"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/loading_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Loading message history..."
+                    android:visibility="visible" />
+
+                <ListView
+                    android:id="@+id/listview_single_chat"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentBottom="true"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="8dp"
+                    android:listSelector="@android:color/transparent"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="1dp"></ListView>
+
+                <ProgressBar
+                    android:id="@+id/progress"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+        </LinearLayout>
+
+        <!--
+             <ProgressBar 
+            android:id="@+id/test"
+           style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="0dp"
+            android:layout_centerHorizontal="true"
+            android:indeterminate="false"
+            android:max="101"
+            android:progress="30"
+            android:progressDrawable="@drawable/circular_progress_bar"
+            android:layout_centerInParent="true"
+          
+            />
+        -->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/places"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="-3dp"></RelativeLayout>
+
+</RelativeLayout>
+
+    <!--
+
+    <RelativeLayout
+    android:id="@+id/creadit_sms_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/border_black"
+    android:visibility="visible" >
+
+    <ImageView
+        android:id="@+id/time_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="1dp"
+        android:src="@drawable/ic_mode_edit_black_24dp" />
+
+    <CheckBox
+        android:id="@+id/check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/user_sms_creadit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/time_select"
+        android:layout_toRightOf="@+id/check_box"
+        android:gravity="center_vertical"
+        android:text="For undelivered Chats, use my balance to send "
+        android:textColor="@android:color/black"
+        android:textSize="10sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+    android:id="@+id/credit_email_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:gravity="center_vertical"
+    android:visibility="visible" >
+
+    <ImageView
+        android:id="@+id/email_time_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="1dp"
+        android:src="@drawable/ic_mode_edit_black_24dp" />
+
+    <CheckBox
+        android:id="@+id/email_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/user_email_creadit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/email_time_select"
+        android:layout_toRightOf="@+id/email_check_box"
+        android:gravity="center_vertical"
+        android:text="Use my email credits to send emails not delivered in App with in 0:05 Min"
+        android:textColor="@android:color/black"
+        android:textSize="10sp" />
+    </RelativeLayout>-->

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array  name="dateRange">
+	    <item>Default</item>
+	    <item>Today</item>
+	    <item>Yesterday</item>
+	    <item>Week</item>
+	    <item>This month</item>
+	    <item>Last month</item>
+	    <item>Custom</item>
+    </string-array>
+
+	<string-array name="payment">
+		<item>Select</item>
+		<item>Paid</item>
+		<item>Paritally Paid</item>
+		<item>Unpaid</item>
+	</string-array>
+    
+   <string-array  name="sample">
+	    <item>Select Template</item>
+	    <item>Lorem ipsum  elit.</item>
+	    <item>dolor sit amet,</item>
+	    <item>consectetuer adipiscing</item>
+	    <item>Aenean commodo</item>
+	    <item>ligula eget</item>
+	    <item>dolor.</item>
+    </string-array>
+    
+   
+    <string-array  name="Send_type_Array">
+	    <item>Send immediately</item>
+	    <item>Send After</item>
+    </string-array>
+    
+     <string-array  name="Frequency_Array">
+	    <item>Day</item>
+	    <item>week</item>
+	    <item>Month</item>
+    </string-array>
+
+	<string-array name="darray">
+		<item>Once</item>
+		<item>Daily</item>
+		<item>Weekly</item>
+		<item>Monthly</item>
+	</string-array>
+	<string-array name="delayarray">
+		<item>Hour</item>
+		<item>Day</item>
+		<item>Week</item>
+		<item>Month</item>
+	</string-array>
+
+	<string-array name="credit_delayarray">
+		<item>Day</item>
+		<item>Week</item>
+		<item>Month</item>
+	</string-array>
+
+
+	<string-array  name="Frequency_Mail">
+	    <item>Choose  a Recipient Category</item>
+	    <item>Group or Groups</item>
+	    <item>Email or Emails</item>
+	    <item>Add Manually</item>
+    </string-array>
+    
+     <string-array name="SampleMail">
+        <item>Sample Mail Template</item>
+	    <item>Mail 1</item>
+	    <item>Mail 2</item>
+	    <item>Mail 3</item>
+     </string-array>
+
+	<string-array  name="select_array">
+	<item>Select</item>
+	</string-array>
+
+	<string-array  name="payment_gateway">
+		<item>PayUMoney</item>
+	</string-array>
+
+	<string-array name="selectItemType">
+		<item>Select Item Type</item>
+		<item>Goods</item>
+		<item>Services</item>
+		<item>Goods &amp; Services</item>
+	</string-array>
+
+	<string-array name="orderStatusArray">
+		<item>Change Order Status</item>
+		<item>Pending</item>
+		<item>Cancelled</item>
+		<item>Placed</item>
+		<item>Accepted</item>
+		<item>Shipped</item>
+		<item>Delivered</item>
+	</string-array>
+
+</resources>

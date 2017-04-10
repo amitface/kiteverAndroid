@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    
+    
+    <LinearLayout 
+        android:id="@+id/toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        
+        <SeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:layout_centerInParent="true" />
+        
+    </LinearLayout>
+    
+
+    <RelativeLayout
+        android:id="@+id/frndattch_audiofile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/toplayout"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/audioplay"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:background="#000000"
+            android:gravity="center"
+            android:text="PLAY"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/audiostop"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/audioplay"
+            android:background="#000000"
+            android:gravity="center"
+            android:text="STOP"
+            android:textColor="#ffffff" />
+
+        <ProgressBar
+            android:id="@+id/audio_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+        
+        
+         <ProgressBar
+            android:id="@+id/attch_audio_progress2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="0dp"
+            android:layout_centerHorizontal="true"
+            android:indeterminate="false"
+            android:max="101"
+            android:visibility="gone"
+            android:progress="0"
+            android:layout_gravity="center"
+            android:progressDrawable="@drawable/circular_progress_bar"
+            android:layout_centerInParent="true" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

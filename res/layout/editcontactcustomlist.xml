@@ -1,0 +1,73 @@
+
+<ScrollView
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" 
+       android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ 
+   
+    android:scrollbars="vertical"
+   
+    
+ 
+  android:layout_gravity="center"> 
+  
+<LinearLayout
+  
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/textViewNameMobi"
+            android:layout_marginLeft="16dp"
+              android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+          android:textSize="18sp"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/Mobilete"
+            android:layout_width="80dp"
+            android:layout_marginLeft="10dp"
+              android:layout_gravity="center"
+             android:textColor="#000000"
+           android:textSize="17sp"
+             android:layout_weight="1"
+             android:inputType="number"
+            android:layout_height="wrap_content"
+            android:text="9999999999" />
+       <ImageView
+        android:id="@+id/editContactImage"
+        android:layout_width="30dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_marginLeft="15dp"
+        android:layout_height="30dp"
+        android:src="@drawable/edit" />
+
+     <ImageView
+    android:id="@+id/delete"
+    android:layout_marginLeft="15dp"
+    android:layout_width="30dp"
+    android:layout_gravity="center"
+    android:layout_height="40dp"
+    android:src="@drawable/delete" />
+
+        
+    </TableRow>
+
+</LinearLayout>
+</ScrollView>

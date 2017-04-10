@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/chat_bg"
+    android:clickable="true"
+    tools:context="com.example.symlydemo.MainActivity$PlaceholderFragment" >
+
+    <LinearLayout
+        android:id="@+id/chatbottomlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/message_box"
+            android:padding="10dp" >
+
+            <!--
+            <Button 
+            android:id="@+id/message_send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:textColor="@android:color/black"
+            android:layout_toRightOf="@+id/camera"
+            android:layout_alignParentRight="true"
+            android:textSize="12sp"
+            />
+            -->
+
+            <ImageView
+                android:id="@+id/message_send_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/camera" />
+
+            <ImageView
+                android:id="@+id/imozebtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/chat_msg"
+                android:layout_alignParentLeft="true"
+                android:padding="5dp"
+                android:src="@drawable/smile" />
+
+            <sms19.inapp.msg.imoze.EmojiconEditText
+                android:id="@+id/chat_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/message_send_btn"
+                android:layout_toRightOf="@id/imozebtn"
+                android:background="@android:color/white"
+                android:enabled="false"
+                android:hint="Type your message..."
+                android:inputType="none"
+                android:maxLines="5"
+                android:minHeight="40dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="15dp"
+                android:paddingTop="2dp"
+                android:privateImeOptions="nm"
+                android:text=""
+                emojicon:emojiconSize="28sp" />
+
+            <RelativeLayout
+                android:id="@+id/emojicons"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/chat_msg"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/write_message" />
+
+            <ImageView
+                android:id="@+id/imozebtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/checkbox_new" />
+
+            <TextView
+                android:id="@+id/user_sms_creadit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/checkbox"
+                android:layout_toRightOf="@+id/imozebtn2"
+                android:gravity="center_vertical"
+                android:hint="Type your message..."
+                android:text="User SMS Credit to send message not delevired in App with in 0.05mm "
+                android:textSize="10sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/chatbottomlay" >
+
+        <ListView
+            android:id="@+id/broadcats_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp"
+            android:listSelector="@android:color/transparent"
+            android:paddingBottom="10dp"
+            android:paddingTop="1dp" >
+        </ListView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/places"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="-3dp" >
+    </RelativeLayout>
+
+</RelativeLayout>

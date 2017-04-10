@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal"
+                android:weightSum="1.5" >
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <Spinner
+                        android:id="@+id/country_code1"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/name_country1"
+                        android:layout_width="75dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/rectangle_shape"
+                        android:clickable="false"
+                        android:drawableRight="@android:drawable/arrow_down_float"
+                        android:gravity="center"
+                        android:hint="+91"
+                        android:maxLength="20"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/rectangle_shape"
+                    android:ems="20"
+                    android:hint="Mobile No."
+                    android:inputType="number"
+                    android:maxLength="20"
+                    android:padding="8dp"
+                    android:textColor="#000000" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/line_sharp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal"
+                android:weightSum="1.5" >
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <Spinner
+                        android:id="@+id/country_code2"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/name_country2"
+                        android:layout_width="75dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/rectangle_shape"
+                        android:clickable="false"
+                        android:drawableRight="@android:drawable/arrow_down_float"
+                        android:gravity="center"
+                        android:hint="+91"
+                        android:maxLength="20"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/rectangle_shape"
+                    android:ems="20"
+                    android:hint="Mobile No."
+                    android:inputType="number"
+                    android:maxLength="20"
+                    android:padding="8dp"
+                    android:textColor="#000000" >
+                </EditText>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/line_sharp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal"
+                android:weightSum="1.5" >
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <Spinner
+                        android:id="@+id/country_code3"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/name_country3"
+                        android:layout_width="75dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/rectangle_shape"
+                        android:clickable="false"
+                        android:drawableRight="@android:drawable/arrow_down_float"
+                        android:gravity="center"
+                        android:hint="+91"
+                        android:maxLength="20"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/rectangle_shape"
+                    android:ems="20"
+                    android:hint="Mobile No."
+                    android:inputType="number"
+                    android:maxLength="20"
+                    android:padding="8dp"
+                    android:textColor="#000000" >
+                </EditText>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/line_sharp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal"
+                android:weightSum="1.5" >
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <Spinner
+                        android:id="@+id/country_code4"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/name_country4"
+                        android:layout_width="75dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/rectangle_shape"
+                        android:clickable="false"
+                        android:drawableRight="@android:drawable/arrow_down_float"
+                        android:gravity="center"
+                        android:hint="+91"
+                        android:maxLength="20"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <EditText
+                    android:id="@+id/editText4"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/rectangle_shape"
+                    android:ems="20"
+                    android:hint="Mobile No."
+                    android:inputType="number"
+                    android:maxLength="20"
+                    android:padding="8dp"
+                    android:textColor="#000000" >
+                </EditText>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/line_sharp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal"
+                android:weightSum="1.5" >
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <Spinner
+                        android:id="@+id/country_code5"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/name_country5"
+                        android:layout_width="75dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/rectangle_shape"
+                        android:clickable="false"
+                        android:drawableRight="@android:drawable/arrow_down_float"
+                        android:gravity="center"
+                        android:hint="+91"
+                        android:maxLength="20"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <EditText
+                    android:id="@+id/editText5"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/rectangle_shape"
+                    android:ems="20"
+                    android:hint="Mobile No."
+                    android:inputType="number"
+                    android:maxLength="20"
+                    android:padding="8dp"
+                    android:textColor="#000000" >
+                </EditText>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/line_sharp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal"
+                android:weightSum="1.5" >
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <Spinner
+                        android:id="@+id/country_code6"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/name_country6"
+                        android:layout_width="75dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/rectangle_shape"
+                        android:clickable="false"
+                        android:drawableRight="@android:drawable/arrow_down_float"
+                        android:gravity="center"
+                        android:hint="+91"
+                        android:maxLength="20"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <EditText
+                    android:id="@+id/editText6"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/rectangle_shape"
+                    android:ems="20"
+                    android:hint="Mobile No."
+                    android:inputType="number"
+                    android:maxLength="20"
+                    android:padding="8dp"
+                    android:textColor="#000000" >
+                </EditText>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/line_sharp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal"
+                android:weightSum="1.5" >
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <Spinner
+                        android:id="@+id/country_code7"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/name_country7"
+                        android:layout_width="75dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/rectangle_shape"
+                        android:clickable="false"
+                        android:drawableRight="@android:drawable/arrow_down_float"
+                        android:gravity="center"
+                        android:hint="+91"
+                        android:maxLength="20"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <EditText
+                    android:id="@+id/editText7"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/rectangle_shape"
+                    android:ems="20"
+                    android:hint="Mobile No."
+                    android:inputType="number"
+                    android:maxLength="20"
+                    android:padding="8dp"
+                    android:textColor="#000000" >
+                </EditText>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/line_sharp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal"
+                android:weightSum="1.5" >
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <Spinner
+                        android:id="@+id/country_code8"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/name_country8"
+                        android:layout_width="75dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/rectangle_shape"
+                        android:clickable="false"
+                        android:drawableRight="@android:drawable/arrow_down_float"
+                        android:gravity="center"
+                        android:hint="+91"
+                        android:maxLength="20"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <EditText
+                    android:id="@+id/editText8"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/rectangle_shape"
+                    android:ems="20"
+                    android:hint="Mobile No."
+                    android:inputType="number"
+                    android:maxLength="20"
+                    android:padding="8dp"
+                    android:textColor="#000000" >
+                </EditText>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/line_sharp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal"
+                android:weightSum="1.5" >
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <Spinner
+                        android:id="@+id/country_code9"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/name_country9"
+                        android:layout_width="75dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/rectangle_shape"
+                        android:clickable="false"
+                        android:drawableRight="@android:drawable/arrow_down_float"
+                        android:gravity="center"
+                        android:hint="+91"
+                        android:maxLength="20"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <EditText
+                    android:id="@+id/editText9"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/rectangle_shape"
+                    android:ems="20"
+                    android:hint="Mobile No."
+                    android:inputType="number"
+                    android:maxLength="20"
+                    android:padding="8dp"
+                    android:textColor="#000000" >
+                </EditText>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/line_sharp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal"
+                android:weightSum="1.5" >
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <Spinner
+                        android:id="@+id/country_code10"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/name_country10"
+                        android:layout_width="75dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/rectangle_shape"
+                        android:clickable="false"
+                        android:drawableRight="@android:drawable/arrow_down_float"
+                        android:gravity="center"
+                        android:hint="+91"
+                        android:maxLength="20"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <EditText
+                    android:id="@+id/editText10"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/rectangle_shape"
+                    android:ems="20"
+                    android:hint="Mobile No."
+                    android:inputType="number"
+                    android:maxLength="20"
+                    android:padding="8dp"
+                    android:textColor="#000000" >
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#006A66"
+        android:gravity="center"
+        android:text="Done"
+        android:textColor="#F5F5F5" />
+
+</RelativeLayout>

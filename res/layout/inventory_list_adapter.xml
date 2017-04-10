@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tableborder"
+    android:minHeight="55dp"
+    android:orientation="horizontal"
+    android:padding="1dp"
+    android:weightSum="4">
+
+    <TextView
+        android:id="@+id/tvInventoryListName"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="ProductName"
+        android:textAlignment="center"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tvInventoryListStock"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Stock"
+        android:textAlignment="center"
+        android:textSize="12sp" />
+
+    <FrameLayout
+        android:id="@+id/tvInventoryListAdd"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Stock"
+        android:textAlignment="center"
+        android:textSize="12sp">
+
+        <TextView
+            android:id="@+id/tvAddImage"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text="@string/cart_plus" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/tvInventoryListHistory"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="History"
+        android:textAlignment="center"
+        android:textSize="12sp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/im_view_mail_template" />
+    </FrameLayout>
+</LinearLayout>

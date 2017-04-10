@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_purchase_edit_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kitever.pos.fragment.purchaseList.Purchase.PurchaseEditItemActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/tvEditCartSelectCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_primary"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="7dp"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/tvEditCartGoCart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:enabled="false"
+                android:gravity="center_horizontal"
+                android:text="@string/cart_basket"
+                android:textColor="#FFF"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/tvEditCartTextSelect"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="8"
+                android:text="Select Item"
+                android:textColor="#FFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvEditCartCheckDone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/check_icon"
+                android:textColor="#FFF"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewEditCart"
+            android:layout_width="match_parent"
+            android:layout_height="351dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/listview_background"
+            android:divider="@null"
+            android:dividerHeight="5dp"
+            android:padding="7dp" />
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/tvEditCartSelectCart"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/select_cart"
+        android:background="@color/list_divider_color" />
+
+
+    <LinearLayout
+        android:id="@+id/selected_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="3">
+
+
+        <TextView
+            android:id="@+id/tvEditCartUpdate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_primary"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="Done"
+            android:textColor="#FFF" />
+
+        <TextView
+            android:id="@+id/tvEditCartAddItems"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="2"
+            android:background="@color/color_primary"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="Add More Items"
+            android:textColor="#FFF"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:clickable="true"
+    android:background="#fff" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/grouppiclay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/p_my_pic_mt" >
+
+            <ImageView
+                android:id="@+id/grouppic"
+                android:layout_width="@dimen/p_profilepic_size"
+                android:layout_height="@dimen/p_profilepic_size"
+                android:layout_centerInParent="true"
+                android:src="@drawable/group_img" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/selectimgtxt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/grouppiclay"
+            android:layout_marginTop="@dimen/p_changeimgtxt_mt"
+            android:gravity="center"
+            android:text="Please select a image for group"
+            android:textColor="@color/white"
+            android:textSize="@dimen/p_changeimgtxt_txtsize" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/selectimgtxt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/p_name_et_mt"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/input13" />
+
+            <EditText
+                android:id="@+id/groupname_et"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/input"
+                android:hint="Your Group Name"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColorHint="#454545"
+                android:textSize="@dimen/number_et_textsize"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

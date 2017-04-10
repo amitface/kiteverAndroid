@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/school"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="Guidelines"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is a Beta version and if you find any problem/issue or need any support,mail us at "
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="info@sms19.in"
+            android:textColor="#0040ff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text=""
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textAbtSms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About SMS19:" 
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textAbtSmsIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi there! Welcome to SMS19 App. This new gen app will give a new meaning to SMSing. No more costly SMS packs from your service provider; SMS19 App provides low cot smsing right in your pocket. While you can use sms19 to send single sms’ to any Indian mobile, it is particularly useful for sending wishes / invitations to multiple contacts/groups. " />
+
+        <TextView
+            android:id="@+id/textAbtSmsInS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To enjoy theSMS19 services, please ensure that you follow the instructions contained herein properly." />
+
+        <TextView
+            android:id="@+id/textView2fdfdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" " />
+
+        <TextView
+            android:id="@+id/textVHow2Us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How to Use SMS19:"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textHow2Des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMS19 is easy to use. Just have a quick look at the instructions below and you are good to go!" />
+
+        <TextView
+            android:id="@+id/textHowBfrLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.	First Screen :"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textHowBfrLogDes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="If you tried to download sms19 and got the below screen, you need to update your Google Play Services otherwise you’ll get an error while signing up with Google plus." />
+
+        <ImageView
+            android:id="@+id/imageHowBfrLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/a" />
+
+        <TextView
+            android:id="@+id/textSignUpSignin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.	Sign Up/Sign In Screen:"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textSignupSigninDes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="So now that you’ve downloaded the App successfully. You can sign up with sms19, you can also sign up with your facebook or Google plus account. However, since your mobile no. acts as your username here, you need to mention your mobile no. to complete the sign up process (Complete registration Image*). " />
+        <TextView
+            android:id="@+id/textSignupSigninDes1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upon sign up, your password is sent to your registered mobile no."
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textSignupSigninDes2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Use your mobile no. as username and password to sign in. If you have an existing transactional account on our web application sms19.com, you can sign in with the credentials of that account as well." />
+
+        <ImageView
+            android:id="@+id/imageHowHowBfrLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/b" />
+
+        <TextView
+            android:id="@+id/textHowSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complete registration image:"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/imageHowSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/d" />
+
+        <TextView
+            android:id="@+id/textHowLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login image:"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/imageHowLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/c" />
+
+        <TextView
+            android:id="@+id/textHowForgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot password image:"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/imageHowForgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/e" />
+
+        <TextView
+            android:id="@+id/textHowHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Home Screen:"
+            android:textColor="#000000"  />
+
+        <ImageView
+            android:id="@+id/imagetext1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text1" />
+
+        <ImageView
+            android:id="@+id/imageHowHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:background="@drawable/f" />
+
+        <TextView
+            android:id="@+id/textHowSendSms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a.	Send SMS:"
+            android:textColor="#000000" />
+        
+        <TextView
+            android:id="@+id/textHowSendSmstxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To send SMS, Select recipients from contacts by clicking on the Add contacts icon or groups by clicking on the Add group icon. Alternatively, you can add contacts manually by clicking the Manually Add recipients icon. This will populate all the recipient’s mobile no.s in the Mobile box and can at any time be altered by clicking the Edit contacts icon. Next, you can select a predefined template or compose a custom template. To send instant sms, click on Send Now else you can schedule for later by clicking on Send Later." />
+        
+          <TextView
+            android:id="@+id/textHowSendSmstxt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="When you send or schedule a message, the equivalent credits are deducted from your sms credit balance. However, in case of scheduled sms , if you delete teh sms before it is sent, the balance consumed  is refunded to you sms credit balance. "/>
+        
+        <ImageView
+             android:id="@+id/imagetext2Send"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+            android:background="@drawable/text2" />
+        
+         <ImageView
+            android:id="@+id/imageHowSendSms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:background="@drawable/sends" />
+       
+          <TextView
+            android:id="@+id/textHowContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="b.	Add/edit/delete contacts and groups:"
+            android:textColor="#000000" />
+          
+           <TextView
+            android:id="@+id/textHowContactDes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To add contacts from this screen, simply click the add contact icon to lead to the add contact page. You can either add contacts from your phonebook or manually. To add a group , click the add group icon which will lead you to the create group page.  To send sms on contacts or a group. Select the contacts by clicking the checkbox against the contact and click on the ‘Send SMS’ ribbon down below. To add contacts to a group, click on the Group tab and then click on the edit icon. To delete  a contact or group, simply click the delete icon against the contact or the group."/>
+        
+         <ImageView
+            android:id="@+id/imageHowContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:background="@drawable/cnt" />
+         
+            <TextView
+            android:id="@+id/textHowTemplate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="c.	Select predefined templates or custom make them:"
+            android:textColor="#000000"  />
+            
+            <TextView
+            android:id="@+id/textHowTemplatetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Here you can either select any of the listed occasion for which you wish to send sms, upon which you’ll be lead to the predefined templates fot that occassion or alternatively, you can click on the the Custom Template ribbon to create your own custom message text to be sent. Once you’ve selected the template, click on the Send SMS ribbon which will lead you to the Send SMS screen.  " />
+
+        <ImageView
+            android:id="@+id/imageHowTemplate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:background="@drawable/i" />
+
+         <ImageView
+            android:id="@+id/imageHowTemplateList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:background="@drawable/j" />
+                
+         <ImageView
+            android:id="@+id/imageHowCustomTemplate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:background="@drawable/k" />
+
+         <TextView
+            android:id="@+id/textHowSmsReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="d.	View or download sms reports :"
+            android:textColor="#000000"  />
+         
+         <TextView
+            android:id="@+id/textHowSmsReporttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You can view or download the status of the sms you’ve sent through this screen. Please make sure to download reports regularly as these reports are available only for today and the last 6 days. To view report, click on the calendar icon displaying the date for which you wish to view the report. To download, click on the Download report icon"/>
+
+        <ImageView
+            android:id="@+id/imageHowSmsReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/g" />
+
+         <ImageView
+            android:id="@+id/imageHowSmsReportList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/h" />
+         
+         <TextView
+             android:id="@+id/textHowBuyCredit"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="e.	Buy SMS credits"
+             android:textColor="#000000" />
+         
+          <TextView
+             android:id="@+id/textHowBuyCredittext"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="To buy SMS credits, select the package from the package list and complete the payment to top up your sms balance. In case your balance does not reflect even after successful payment, do write us at info@sms19.in and we’ll try resolving the issue at the earliest. All payments are non refundable" />
+          
+         <ImageView
+             android:id="@+id/imageHowBuyCredit"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@drawable/o" />
+         
+          <TextView
+             android:id="@+id/textHowUpcoming"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="f.	Upcoming events:"
+             android:textColor="#000000" />
+         
+          <TextView
+             android:id="@+id/textHowUpcomingtext"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text=" This feature shall notify you of the forthcoming events. This shall shortly be available in the upcoming versions of SMS19."/>
+                   
+          <TextView
+            android:id="@+id/textHowEditProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="g.	Edit your profile:"
+            android:textColor="#000000" />
+          
+          <TextView
+            android:id="@+id/textHowEditProfiletxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You can edit your mobile no. or mail id through this screen by updating and clicking on Update button. In case you wish to be prompted before any SMS is actually sent, just check the “Prompt me before sending SMS” option and update. "
+             />
+        
+         <ImageView
+            android:id="@+id/imageHowEditProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:background="@drawable/l" />
+         
+          <TextView
+            android:id="@+id/textHowTransaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="h.	View Transactions:"
+            android:textColor="#000000" />
+          
+          <TextView
+            android:id="@+id/textHowTransactiontxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This will display the datewise consumption of your sms credit balance." />
+        
+         <ImageView
+            android:id="@+id/imageHowTransaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:background="@drawable/m" />
+         
+            <TextView
+            android:id="@+id/textHowSchedualmsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="i.	View/delete scheduled sms:"
+            android:textColor="#000000"  />
+            
+            <TextView
+            android:id="@+id/textHowSchedualmsgtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Through this screen you can view or delete the sms scheduled for you for a later time. This screen shall only show the list of sms that are yet to be sent. If you wish to delete a scheduled sms, just click on the delete icon and the sms will not be sent. Meanwhile, the sms credit balance used at the time of scheduling will be refunded back to your balance."/>
+
+        <ImageView
+            android:id="@+id/imageHowSchedualmsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:background="@drawable/n" />
+        
+   <TextView
+            android:id="@+id/textHowTandCon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="j.	View Terms and Privacy:"
+            android:textColor="#000000"  />
+         
+   <TextView
+            android:id="@+id/textHowTandContxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You can view the terms and privacy statement here. Please make sure you have the latest version so that you can view the updated policy" />
+   
+      <TextView
+            android:id="@+id/textHowlast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thats all, folks ! Enjoy SMSing with your brand new App!"
+            android:textColor="#000000"  />
+    </LinearLayout>
+
+</ScrollView>

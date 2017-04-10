@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/attch_videofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/attch_videoimg"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:gravity="left"
+            android:scaleType="centerCrop"
+            android:src="@drawable/no_video" />
+
+        
+        
+        <ImageView
+            android:id="@+id/attch_videobtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+           android:visibility="gone"
+            android:src="@drawable/play_buttn"
+            />
+        
+        
+          <ProgressBar
+            android:id="@+id/attch_video_progress"
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_centerInParent="true" />
+          
+             <ProgressBar
+            android:id="@+id/attch_video_progress2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            
+            android:layout_centerHorizontal="true"
+            android:indeterminate="false"
+            android:max="101"
+            android:visibility="gone"
+            android:progress="0"
+            android:layout_gravity="center"
+            android:progressDrawable="@drawable/circular_progress_bar"
+            android:layout_centerInParent="true" />
+        
+      
+    </RelativeLayout>
+
+</RelativeLayout>

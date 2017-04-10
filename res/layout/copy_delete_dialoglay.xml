@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/copybtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:background="@drawable/tableborder"
+        android:gravity="center"
+        android:text="Copy"
+        android:textColor="#000000"
+        android:padding="5dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/dltbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:layout_below="@id/copybtn"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/tableborder"
+        android:gravity="center"
+        android:text="Delete"
+        android:padding="5dp"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/share_tbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:layout_below="@id/dltbtn"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/tableborder"
+        android:gravity="center"
+        android:text="Share"
+        android:padding="5dp"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/forward_tbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:layout_below="@id/share_tbtn"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/tableborder"
+        android:gravity="center"
+        android:text="Forward"
+        android:padding="5dp"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+</RelativeLayout>

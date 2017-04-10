@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="#006966" >
+        
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_width="18dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/action_back_arrow" />
+
+        <ImageView
+            android:id="@+id/store_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_toRightOf="@+id/back_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/merchant_icon" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shop here"
+            android:textColor="#FFFFFF" 
+            android:layout_toRightOf="@+id/store_icon"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"/>
+
+        
+
+    </RelativeLayout>
+
+    <WebView
+        android:layout_marginTop="3dp"
+        android:id="@+id/web_view_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_layout" 
+        android:layout_marginBottom="40dp"/>
+
+    <Button
+        android:id="@+id/close_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#006966"
+        android:text="Close"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

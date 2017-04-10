@@ -1,0 +1,331 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" 
+	
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+    <ScrollView
+    android:id="@+id/scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+    
+         <RelativeLayout
+             android:id="@+id/container"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent" >
+
+             <RelativeLayout
+                 android:id="@+id/LinearDATE"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="5dp" >
+
+                 <TextView
+                     android:id="@+id/date"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_centerHorizontal="true"
+                     android:layout_centerVertical="true"
+                     android:padding="5dp"
+                     android:text="DATE"
+                     android:textColor="#00BFFF"
+                     android:textStyle="italic" />
+             </RelativeLayout>
+
+             <RelativeLayout
+                 android:id="@+id/LinearReceive"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@+id/LinearDATE"
+                 android:layout_marginRight="30dp"
+                 android:layout_marginTop="5dp"
+                 android:gravity="left"
+                 android:orientation="vertical"
+                 android:visibility="visible" >
+
+                 <EditText
+                     android:id="@+id/ReceiveMsg"
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:background="@drawable/replychatback"
+                     android:editable="false"
+                     android:padding="15dp"
+                     android:selectAllOnFocus="true"
+                     android:text="Hello,fdf fdfd dfdf dfdfd gh hjdf"
+                     android:textAppearance="?android:attr/textAppearanceMedium"
+                     android:textColor="#FFFFFF"
+                     android:textIsSelectable="true" />
+
+                 <TextView
+                     android:id="@+id/ReceiveTime"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignBottom="@+id/ReceiveMsg"
+                     android:layout_alignParentRight="true"
+                     android:layout_marginRight="5dp"
+                     android:text="Time"
+                     android:padding="6dp"
+                     android:textSize="9sp"
+                     android:textColor="#000000"
+                     android:textStyle="italic" />
+             </RelativeLayout>
+
+             <RelativeLayout
+                 android:id="@+id/LinearSend"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentRight="true"
+                 android:layout_below="@+id/LinearReceive"
+                 android:layout_marginLeft="30dp"
+                 android:layout_marginTop="10dp"
+                 android:textIsSelectable="true"
+                 android:editable="false"
+                 android:gravity="right" >
+
+                 <EditText
+                     android:id="@+id/sendMsg"
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:background="@drawable/chatbk"
+                     android:editable="false"
+                     android:gravity="left"
+                     android:padding="15dp"
+                     android:selectAllOnFocus="true"
+                     android:layout_marginRight="5dp"
+                     android:text="hii I am fine and you dffgf dfdfff"
+                     android:textAppearance="?android:attr/textAppearanceMedium"
+                     android:textColor="#000000"
+                     android:textIsSelectable="true"
+                  />
+
+                 <TextView
+                     android:id="@+id/senttime"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignBottom="@+id/sendMsg"
+                     android:layout_alignParentRight="true"
+                     android:layout_marginRight="5dp"
+                     android:textSize="9sp"
+                     android:text="Time"
+                     android:padding="6dp"
+                     android:textColor="#000000"
+                     android:textStyle="italic"
+                     />
+
+             </RelativeLayout>
+
+             <RelativeLayout
+                 android:id="@+id/RelReceiveImg"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@+id/LinearSend"
+                 android:layout_marginRight="30dp"
+                 android:layout_marginTop="5dp"
+                 android:gravity="left"
+                 android:textIsSelectable="true"
+                 android:editable="false"
+                 android:orientation="vertical"
+                 android:visibility="visible" >
+
+                 <ImageView
+                     android:id="@+id/imageRecChat"
+                     android:layout_width="150dp"
+                     android:layout_height="150dp"
+                     android:layout_alignParentLeft="true"
+                     android:layout_centerVertical="true"
+                     android:src="@drawable/abc_btn_radio_to_on_mtrl_015" />
+             </RelativeLayout>
+
+             <RelativeLayout
+                 android:id="@+id/RelSendImg"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentRight="true"
+                 android:layout_below="@+id/RelReceiveImg"
+                 android:layout_marginLeft="30dp"
+                 android:layout_marginTop="10dp"
+                 android:gravity="right" >
+
+                 <ImageView
+                     android:id="@+id/imageSendChat"
+                     android:layout_width="150dp"
+                     android:layout_height="150dp"
+                     android:layout_centerHorizontal="true"
+                     android:layout_centerVertical="true"
+                     android:src="@drawable/abc_btn_check_to_on_mtrl_000" />
+             </RelativeLayout>
+
+             <RelativeLayout
+                 android:id="@+id/RelReceiveVideo"
+                 android:layout_width="150dp"
+                 android:layout_height="150dp"
+                 android:layout_below="@+id/RelSendImg"
+                 android:layout_toLeftOf="@+id/textDateTimeShowReceive"
+                 android:gravity="left"
+                 android:orientation="vertical"
+                 android:visibility="visible" >
+ 
+                 <FrameLayout
+                     android:id="@+id/video_frame_rec"
+                     android:layout_width="fill_parent"
+                     android:layout_height="fill_parent"
+                     android:layout_gravity="center_vertical|center_horizontal"
+                     >
+                     
+                     <VideoView
+                     android:id="@+id/videoRecChat"
+                     android:layout_width="fill_parent"
+                     android:layout_height="fill_parent"
+                     android:layout_gravity="center_vertical|center_horizontal"
+                      />
+                     
+                     <ImageButton
+                         android:id="@+id/play_buttonRec"
+                         android:layout_width="fill_parent"
+                         android:layout_height="fill_parent"
+                         android:layout_gravity="center_vertical|center_horizontal"
+                         android:src="@drawable/nextarrow" />
+                 </FrameLayout>
+                 
+             </RelativeLayout>
+
+             <RelativeLayout
+                 android:id="@+id/RelSendvideo"
+                 android:layout_width="150dp"
+                 android:layout_height="150dp"
+                 android:layout_alignParentRight="true"
+                 android:layout_below="@+id/RelReceiveVideo"
+                 android:gravity="right" >
+
+                <FrameLayout
+                     android:id="@+id/video_frame"
+                     android:layout_width="50dp"
+                     android:layout_height="50dp"
+                     android:layout_gravity="center_vertical|center_horizontal"
+                     >
+
+                     <VideoView
+                         android:id="@+id/videoSendChat"
+                         android:layout_width="50dp"
+                         android:layout_height="50dp"
+                         android:layout_gravity="center_vertical|center_horizontal"
+                          />
+
+                     <ImageButton
+                         android:id="@+id/play_button"
+                         android:layout_width="40dp"
+                         android:layout_height="40dp"
+                         android:layout_gravity="center_vertical|center_horizontal"
+                         android:src="@drawable/nextarrow" />
+                </FrameLayout> 
+             </RelativeLayout>
+
+               <RelativeLayout
+                 android:id="@+id/RelAudioReceive"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@+id/RelSendvideo"
+                 android:layout_marginRight="30dp"
+                 android:layout_marginTop="5dp"
+                 android:gravity="left"
+                 android:textIsSelectable="true"
+                 android:editable="false"
+                 android:orientation="vertical"
+                 android:visibility="visible" >
+
+                 <ImageView
+                     android:id="@+id/imageAudioRec"
+                     android:layout_width="150dp"
+                     android:layout_height="40dp"
+                     android:layout_alignParentLeft="true"
+                     android:layout_centerVertical="true"
+                     android:soundEffectsEnabled="true"
+                     android:background="@drawable/aidio_play" />
+                </RelativeLayout>
+                
+              <RelativeLayout
+                 android:id="@+id/RelAudioSend"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentRight="true"
+                 android:layout_below="@+id/RelAudioReceive"
+                 android:layout_marginLeft="30dp"
+                 android:layout_marginTop="10dp"
+                 android:gravity="right" >
+
+                 <ImageView
+                     android:id="@+id/imageAudioSend"
+                     android:layout_width="150dp"
+                     android:layout_height="40dp"
+                     android:layout_centerHorizontal="true"
+                     android:layout_centerVertical="true"
+                     android:soundEffectsEnabled="true"
+                     android:background="@drawable/aidio_play" />
+             </RelativeLayout>
+             
+             <ImageView
+                 android:id="@+id/imageStatusSend"
+                 android:layout_width="20dp"
+                 android:layout_height="20dp"
+                 android:layout_marginRight="5dp"
+                 android:layout_alignParentRight="true"
+                 android:layout_below="@+id/LinearSend"
+                 android:src="@drawable/abc_btn_check_to_on_mtrl_000" />
+
+             <TextView
+                 android:id="@+id/textDateTimeShowReceive"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignRight="@+id/RelReceiveImg"
+                 android:layout_below="@+id/RelReceiveImg"
+                 android:text="TextView" />
+
+             <TextView
+                 android:id="@+id/textDateTimeShowSend"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignRight="@+id/RelSendImg"
+                 android:layout_below="@+id/RelSendImg"
+                 android:text="TextView" />
+             
+               <TextView
+                 android:id="@+id/textDateAudioRec"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                  android:layout_alignRight="@+id/RelAudioReceive"
+                 android:layout_below="@+id/RelAudioReceive"
+                 android:text="TextView" />
+
+             <TextView
+                 android:id="@+id/textDateAudioSend"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignRight="@+id/RelAudioSend"
+                 android:layout_below="@+id/RelAudioSend"
+                 android:text="TextView" />
+             
+              <TextView
+                 android:id="@+id/textDateVideoRec"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                  android:layout_alignRight="@+id/RelReceiveVideo"
+                 android:layout_below="@+id/RelReceiveVideo"
+                 android:text="TextView" />
+
+             <TextView
+                 android:id="@+id/textDateVideoSend"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignRight="@+id/RelSendvideo"
+                 android:layout_below="@+id/RelSendvideo"
+                 android:text="TextView" />
+             
+            
+
+         </RelativeLayout>
+      
+        
+    </ScrollView>
+</RelativeLayout>

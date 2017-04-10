@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="55dp"
+    android:background="@color/white"
+    android:padding="1dp"
+    android:weightSum="5">
+
+    <TextView
+        android:id="@+id/tvVendorDetailName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingLeft="4dp"
+        android:textSize="12sp"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/tvVendorDetailPurchase"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingLeft="2dp"
+        android:textSize="12sp"
+        android:text="Purchase" />
+
+    <TextView
+        android:id="@+id/tvVendorDetailBilled"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingLeft="2dp"
+        android:textSize="12sp"
+        android:text="Billed" />
+    <TextView
+        android:id="@+id/tvVendorDetailPaid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingLeft="2dp"
+        android:textSize="12sp"
+        android:text="Paid" />
+    <TextView
+        android:id="@+id/tvVendorDetailBalance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingLeft="2dp"
+        android:textSize="12sp"
+        android:text="Balance" />
+</LinearLayout>

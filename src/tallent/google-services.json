@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "18101194778",
+    "project_id": "kitever-af77a"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:18101194778:android:3fe9c8757ca81af6",
+        "android_client_info": {
+          "package_name": "com.talent.institute"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNKVy_NYHeeQufZWeovV9WgDGTwA6dTY0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-94066033-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

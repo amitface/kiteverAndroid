@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/invoice_setting_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="1dp"
+            android:gravity="end"
+            android:text="Header"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/invoice_setting_header_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="2dp"
+            android:background="@drawable/template_round_stoke"
+            android:gravity="start"
+            android:maxLength="@integer/edit_view_length"
+            android:minHeight="30dp"
+            android:padding="5dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:stretchColumns="5"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/invoice_setting_footer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="end"
+            android:padding="2dp"
+            android:text="Footer"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/invoice_setting_footer_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="2dp"
+            android:background="@drawable/template_round_stoke"
+            android:gravity="start"
+            android:maxLength="@integer/edit_view_length"
+            android:minHeight="30dp"
+            android:padding="5dp"
+            android:stretchColumns="5"
+            android:text=""
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/invoice_setting_prefix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="end"
+            android:padding="2dp"
+            android:text="Prefix " />
+
+        <EditText
+            android:id="@+id/invoice_setting_prefix_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="2dp"
+            android:background="@drawable/template_round_stoke"
+            android:gravity="start"
+            android:maxLength="@integer/edit_view_length"
+            android:minHeight="40dp"
+            android:padding="5dp"
+            android:stretchColumns="5"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/invoice_setting_order_prefix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="end"
+            android:padding="2dp"
+            android:text="Order Prefix"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/invoice_setting_order_prefix_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="2dp"
+            android:background="@drawable/template_round_stoke"
+            android:gravity="start"
+            android:maxLength="@integer/edit_view_length"
+            android:minHeight="40dp"
+            android:padding="5dp"
+            android:stretchColumns="5"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/invoice_setting_tin_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="end"
+            android:padding="2dp"
+            android:text="Tin No." />
+
+        <EditText
+            android:id="@+id/invoice_setting_tin_no_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="2dp"
+            android:background="@drawable/template_round_stoke"
+            android:gravity="start"
+            android:maxLength="@integer/edit_view_length"
+            android:minHeight="40dp"
+            android:padding="5dp"
+            android:stretchColumns="5"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/invoice_setting_pan_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="end"
+            android:padding="2dp"
+            android:text="Pan No. " />
+
+        <EditText
+            android:id="@+id/invoice_setting_pan_no_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="2dp"
+            android:background="@drawable/template_round_stoke"
+            android:gravity="start"
+            android:maxLength="@integer/edit_view_length"
+            android:minHeight="40dp"
+            android:padding="5dp"
+            android:stretchColumns="5"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/invoice_setting_servicetax_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="end"
+            android:padding="2dp"
+            android:text="Service Tax No. " />
+
+        <EditText
+            android:id="@+id/invoice_setting_servicetax_no_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="2dp"
+            android:background="@drawable/template_round_stoke"
+            android:gravity="start"
+            android:maxLength="@integer/edit_view_length"
+            android:minHeight="40dp"
+            android:padding="7dp"
+            android:stretchColumns="5"
+            android:textSize="14sp"
+
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/invoice_done_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_primary"
+        android:text="Update"
+        android:textColor="#FFF" />
+</LinearLayout>

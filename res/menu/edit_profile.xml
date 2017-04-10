@@ -1,0 +1,54 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="vaibhav.listview.newproject.EditProfile" >
+
+    <item
+        android:id="@+id/rfshMenu"
+        android:orderInCategory="100"
+        android:icon="@drawable/refresh"
+        android:title=""
+        app:showAsAction="always"/>
+  
+    <item
+        android:id="@+id/editProfileMenu"
+        android:orderInCategory="100"
+     
+        android:title="@string/menuEditProfile"
+        app:showAsAction="never"/>
+     
+    <item 
+        android:id="@+id/transactionMenu"
+        android:orderInCategory="100"
+        android:title="@string/menuTransaction"
+        android:showAsAction="never"/>
+    
+    <item
+        android:id="@+id/schedulemsgrMenu"
+        android:orderInCategory="100"
+        android:title="@string/menuScheduleMsg"
+        app:showAsAction="never"/>
+    
+     <item
+        android:id="@+id/termsconditionMenu"
+        android:orderInCategory="100"
+        android:title="@string/menuTermsCondition"
+        app:showAsAction="never"/>
+    
+      <item
+        android:id="@+id/HowtoUseMenu"
+        android:orderInCategory="100"
+        android:title="@string/HowTOUse"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/referMenu"
+     android:orderInCategory="100"
+        android:title="@string/refer"
+        android:showAsAction="never"/>
+   <!--  <item 
+        android:id="@+id/logout"
+        android:orderInCategory="100"
+        android:title="@string/menuLogout"
+        android:showAsAction="never"/> -->
+
+</menu>

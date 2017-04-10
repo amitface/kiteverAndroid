@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#fff"
+    android:clickable="false"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Chat Settings"
+                android:textColor="@color/actionbar_bg"
+                android:textSize="18sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/orange_bar" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="By default show me"
+                android:textColor="@color/black"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <RadioButton
+                    android:id="@+id/available"
+                    style="@android:style/Widget.CompoundButton.CheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Available"
+                    android:textColor="@color/actionbar_bg"
+                    android:textSize="@dimen/radio_text_size" />
+
+                <RadioButton
+                    android:id="@+id/busy"
+                    style="@android:style/Widget.CompoundButton.CheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Busy"
+                    android:textColor="@color/actionbar_bg"
+                    android:textSize="@dimen/radio_text_size" />
+
+                <RadioButton
+                    android:id="@+id/invisible"
+                    style="@android:style/Widget.CompoundButton.CheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Invisible"
+                    android:textColor="@color/actionbar_bg"
+                    android:textSize="@dimen/radio_text_size" />
+
+                <RadioButton
+                    android:id="@+id/only"
+                    style="@android:style/Widget.CompoundButton.CheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Original"
+                    android:textColor="@color/actionbar_bg"
+                    android:textSize="@dimen/radio_text_size" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Show my last online status"
+                android:textColor="@color/black"
+                android:visibility="gone"
+
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:id="@+id/every_one"
+                    style="@android:style/Widget.CompoundButton.CheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Everyone"
+                    android:textColor="@color/actionbar_bg"
+                    android:textSize="@dimen/radio_text_size" />
+
+                <RadioButton
+                    android:id="@+id/none"
+                    style="@android:style/Widget.CompoundButton.CheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="None"
+                    android:textColor="@color/actionbar_bg"
+                    android:textSize="@dimen/radio_text_size" />
+
+                <RadioButton
+                    android:id="@+id/only_contact"
+                    style="@android:style/Widget.CompoundButton.CheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Only Contacts"
+                    android:textColor="@color/actionbar_bg"
+                    android:textSize="@dimen/radio_text_size" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/darker_gray"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="By default use my  credits to send sms &amp; email to offline contacts"
+                android:textColor="@color/black"
+                android:visibility="visible"
+
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:visibility="visible">
+
+                <RadioButton
+                    android:id="@+id/message_to_contact_yes"
+                    style="@android:style/Widget.CompoundButton.CheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Yes"
+                    android:textColor="@color/actionbar_bg"
+                    android:textSize="@dimen/radio_text_size" />
+
+                <RadioButton
+                    android:id="@+id/message_to_contact_no"
+                    style="@android:style/Widget.CompoundButton.CheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="No"
+                    android:textColor="#E77129"
+                    android:textSize="@dimen/radio_text_size" />
+
+            </RadioGroup>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/darker_gray"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+
+                android:text="By default, Set my expiry time for sending sms &amp; email as "
+                android:textColor="@color/black"
+
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:05 Min"
+                    android:textColor="@color/actionbar_bg"
+                    />
+
+                <ImageView
+                    android:id="@+id/time_picker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/write_message" />
+                <!--  <RadioButton
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="1:13m"
+
+                     android:textSize="@dimen/radio_text_size"
+                     style="@android:style/Widget.CompoundButton.CheckBox"
+                     android:textColor="@color/actionbar_bg"
+                     />
+                  -->
+
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/darker_gray"
+                android:visibility="visible" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="By default use my credits to send email to offline contacts"
+                android:textColor="@color/black"
+                android:visibility="gone"
+
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:id="@+id/email_to_contact_yes"
+                    style="@android:style/Widget.CompoundButton.CheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Yes"
+                    android:textColor="@color/actionbar_bg"
+                    android:textSize="@dimen/radio_text_size" />
+
+                <RadioButton
+                    android:id="@+id/email_to_contact_no"
+                    style="@android:style/Widget.CompoundButton.CheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="No"
+                    android:textColor="#E77129"
+                    android:textSize="@dimen/radio_text_size" />
+
+            </RadioGroup>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/darker_gray"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:visibility="gone"
+                android:text="By default, Set my expiry time for sending offline email as "
+                android:textColor="@color/black"
+
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/mail_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:05 Min"
+                    android:textColor="@color/actionbar_bg"
+                    />
+
+                <ImageView
+                    android:id="@+id/mail_time_picker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/write_message" />
+                <!--  <RadioButton
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="1:13m"
+
+                     android:textSize="@dimen/radio_text_size"
+                     style="@android:style/Widget.CompoundButton.CheckBox"
+                     android:textColor="@color/actionbar_bg"
+                     />
+                  -->
+
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Keep my chat history"
+                android:textColor="@color/black"
+                android:visibility="gone"
+
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:id="@+id/forever"
+                    style="@android:style/Widget.CompoundButton.CheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Forever"
+                    android:textColor="@color/actionbar_bg"
+                    android:textSize="@dimen/radio_text_size" />
+
+                <RadioButton
+                    android:id="@+id/sixten_days"
+                    style="@android:style/Widget.CompoundButton.CheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="60 days"
+                    android:textColor="@color/actionbar_bg"
+                    android:textSize="@dimen/radio_text_size" />
+
+                <RadioButton
+                    android:id="@+id/thirty_days"
+                    style="@android:style/Widget.CompoundButton.CheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30 days"
+                    android:textColor="@color/actionbar_bg"
+                    android:textSize="@dimen/radio_text_size" />
+
+                <RadioButton
+                    android:id="@+id/unlimeted"
+                    style="@android:style/Widget.CompoundButton.CheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Unlimited"
+                    android:textColor="@color/actionbar_bg"
+                    android:textSize="@dimen/radio_text_size" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/darker_gray"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Contact message notification:"
+                android:textColor="@color/black"
+                android:visibility="gone"
+
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RadioButton
+                        android:id="@+id/default_ring"
+                        style="@android:style/Widget.CompoundButton.CheckBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Default ringtone"
+                        android:textColor="@color/actionbar_bg"
+                        android:textSize="@dimen/radio_text_size" />
+
+                    <RadioButton
+                        android:id="@+id/select"
+                        style="@android:style/Widget.CompoundButton.CheckBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Select ringtone"
+                        android:textColor="@color/actionbar_bg"
+                        android:textSize="@dimen/radio_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RadioButton
+                        android:id="@+id/vibrate_ring"
+                        style="@android:style/Widget.CompoundButton.CheckBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Vibrate only"
+                        android:textColor="@color/actionbar_bg"
+                        android:textSize="@dimen/radio_text_size" />
+
+                    <RadioButton
+                        android:id="@+id/vibrate_and_ring"
+                        style="@android:style/Widget.CompoundButton.CheckBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ringtone &amp; vibrate"
+                        android:textColor="@color/actionbar_bg"
+                        android:textSize="@dimen/radio_text_size" />
+                </LinearLayout>
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/darker_gray"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Group message notification:"
+                android:textColor="@color/black"
+                android:visibility="gone"
+
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RadioButton
+                        android:id="@+id/group_default_ring"
+                        style="@android:style/Widget.CompoundButton.CheckBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Default ringtone"
+                        android:textColor="@color/actionbar_bg"
+                        android:textSize="@dimen/radio_text_size" />
+
+                    <RadioButton
+                        android:id="@+id/group_select_ring"
+                        style="@android:style/Widget.CompoundButton.CheckBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="Select ringtone"
+                        android:textColor="@color/checked_text_color"
+                        android:textSize="@dimen/radio_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:weightSum="2">
+
+                    <RadioButton
+                        android:id="@+id/group_vibrate_only"
+                        style="@android:style/Widget.CompoundButton.CheckBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Vibrate only"
+                        android:textColor="@color/actionbar_bg"
+                        android:textSize="@dimen/radio_text_size" />
+
+                    <RadioButton
+                        android:id="@+id/group_ring_and_vibrate"
+                        style="@android:style/Widget.CompoundButton.CheckBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ringtone &amp; vibrate"
+                        android:textColor="@color/actionbar_bg"
+                        android:textSize="@dimen/radio_text_size" />
+                </LinearLayout>
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/darker_gray"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+

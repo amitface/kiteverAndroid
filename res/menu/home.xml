@@ -1,0 +1,82 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="vaibhav.listview.newproject.Home" >
+
+    <item
+        android:id="@+id/menu_hotlist"
+        android:icon="@drawable/ic_notifications_white_24dp"
+        android:orderInCategory="101"
+        android:title=""
+        app:showAsAction="always"/>
+    <!--
+       <item 
+        android:id="@+id/settingshome"
+        android:orderInCategory="100"
+        android:title=""
+        app:showAsAction="always"/>
+    -->
+
+    <item
+        android:id="@+id/support"
+        android:orderInCategory="100"
+        android:icon="@drawable/qhelp"
+        android:title=""
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/editProfile"
+        android:icon="@drawable/usericon"
+        android:orderInCategory="102"
+        android:title=""
+        app:showAsAction="always"/>
+
+    <!--
+    <item
+        android:id="@+id/transaction"
+        android:icon="@drawable/ic_transform_black_24dp"
+        android:orderInCategory="103"
+        android:showAsAction="never"
+        android:title="@string/menuTransaction"/>
+    <item
+        android:id="@+id/schedulemsgr"
+        android:icon="@drawable/ic_schedule_black_24dp"
+        android:orderInCategory="104"
+        android:title="@string/menuScheduleMsg"
+        app:showAsAction="never"/>
+
+
+   <item
+        android:id="@+id/termscondition"
+        android:orderInCategory="100"
+        android:title="@string/menuTermsCondition"
+        app:showAsAction="never"/>
+    
+      <item
+        android:id="@+id/HowtoUse"
+        android:orderInCategory="100"
+        android:title="@string/HowTOUse"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/refer"
+        android:orderInCategory="100"
+        android:title="@string/refer"
+        android:showAsAction="never"/> 
+   <item 
+        android:id="@+id/notify"
+        android:orderInCategory="100"
+        android:title="@string/menunotify"
+        android:showAsAction="never"/>
+    -->
+
+
+    <!--
+        <item 
+        android:id="@+id/changesPsd"
+        android:orderInCategory="100"
+        android:icon="@drawable/clock"
+        android:title="@string/changePassword"
+        android:showAsAction="never"/>
+    -->
+
+</menu>

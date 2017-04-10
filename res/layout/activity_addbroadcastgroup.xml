@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top"
+    android:background="@android:color/white"
+    android:gravity="top" >
+
+    <ScrollView
+        android:id="@+id/sroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/main_lin_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/ingpadd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_group_black_48dp" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_avg"
+                android:layout_marginRight="@dimen/margin_avg"
+                android:layout_marginTop="@dimen/margin_avg"
+                android:background="@drawable/customedit"
+                android:hint="Broadcast list group name"
+                android:inputType="textPersonName"
+                android:paddingBottom="@dimen/padding_avg"
+                android:paddingLeft="@dimen/padding_avg"
+                android:paddingTop="@dimen/padding_avg"
+                android:textColorHint="#BDBDBD" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/noteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:paddingLeft="@dimen/padding_avg"
+                android:paddingRight="@dimen/padding_avg"
+                android:paddingTop="@dimen/padding_avg"
+                android:text="Groups added here are treated as broadcast groups.The broadcast groups as displayed in chat as per your plan."
+                android:textColor="#9E9E9E"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/recipientsLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="1px"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/manualLabelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:padding="@dimen/padding_avg"
+                    android:text="BROADCAST LIST RECIPIENTS"
+                    android:textColor="@color/theme_primary_color"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/addImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/touchfeedback"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="4dp"
+                    android:src="@drawable/ic_group_add_black_24dp" />
+
+                <ImageView
+                    android:id="@+id/deleteImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/touchfeedback"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="4dp"
+                    android:src="@drawable/ic_delete_black_24dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/button"
+        android:layout_below="@+id/sroll_view"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/theme_primary_color"
+        android:dividerHeight="1px"
+        android:fastScrollAlwaysVisible="true"
+        android:fastScrollEnabled="true"
+        android:visibility="visible" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/noContactsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sroll_view"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="end"
+        android:padding="@dimen/padding_avg"
+        android:text="NO RECIPIENTS"
+        android:textColor="#9E9E9E"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selectorbackground"
+        android:text="CREATE BROADCAST LIST GROUP"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/noContactsTextView"
+        android:layout_toEndOf="@+id/noContactsTextView" />
+
+</RelativeLayout>

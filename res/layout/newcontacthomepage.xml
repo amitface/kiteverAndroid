@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#fff"
+    android:gravity="center" >
+
+    <TextView
+        android:id="@+id/btnToSendByContact"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#066966"
+        android:gravity="center"
+        android:text="Send Message"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/cbxContactSelectAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btngroupshow"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:button="@drawable/chk_box_new"
+        android:paddingLeft="10dp"
+        android:text="Select All"
+        android:textColor="#777C7D"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+   
+    <TextView
+        android:id="@+id/btncontactshow"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/btngroupshow"
+        android:layout_alignTop="@+id/btnContactAddNew"
+        android:layout_toLeftOf="@+id/btnContactAddNew"
+        android:layout_toRightOf="@+id/imageView1"
+        android:background="#066966"
+        android:gravity="center"
+        android:text="Contact"
+        android:textColor="#fff"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnContactAddNew"
+        android:background="#066966" />
+
+    <TextView
+        android:id="@+id/btnGroupAddNew"
+        android:layout_width="40dp"
+        android:layout_height="24dp"
+        android:layout_alignBottom="@+id/btngroupshow"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/btngroupshow"
+        android:background="#066966"
+        android:gravity="center"
+        android:text="+"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btncontactshow"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView1"
+        android:background="#066966" >
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextSearchContact"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/totalcon"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#0867A3"
+        android:ems="10"
+        android:focusable="false"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:visibility="invisible" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/totalcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cbxContactSelectAll"
+        android:layout_alignBottom="@+id/cbxContactSelectAll"
+        android:layout_toLeftOf="@+id/totalContacts"
+        android:text="Contacts:"
+        android:textColor="#777C7D"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/totalContacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/totalcon"
+        android:layout_alignBottom="@+id/totalcon"
+        android:layout_alignLeft="@+id/btnGroupAddNew"
+        android:layout_marginLeft="10dp"
+        android:text="00"
+        android:textColor="#777C7D"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listViewContact"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_above="@+id/btnToSendByContact"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/NextPrelay"
+        android:divider="@drawable/dividerlist"
+        android:dividerHeight="1dp"
+        android:scrollbars="horizontal" >
+    </ListView>
+
+    
+    <LinearLayout 
+         android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+         android:layout_toLeftOf="@+id/editTextSearchContact"
+        android:layout_toRightOf="@+id/imageView1"
+         android:layout_alignBottom="@+id/refresh"
+        android:layout_alignParentTop="true"
+        >
+     <ImageView
+        android:id="@+id/backbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/textView1"
+        android:padding="7dp"
+        android:background="#066966"
+        android:src="@drawable/arrow_back" />
+    <TextView
+       
+        android:layout_width="match_parent"
+        android:layout_height="40dp"       
+        android:background="#066966"
+        android:gravity="center_vertical"
+        android:text="Contacts"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+    
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgSearchContact"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@android:drawable/ic_menu_search" />
+
+   <!--  <ImageView
+        android:id="@+id/backbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/textView1"
+        android:padding="10dp"
+        android:background="#066966"
+        android:src="@drawable/arrow_back" /> -->
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btncontactshow"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/btncontactshow"
+        android:background="#066966"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_above="@+id/btnContactAddNew"
+        android:layout_alignBottom="@+id/textView1"
+        android:background="#066966"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnContactAddNew"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_alignTop="@+id/btnContactAddNew"
+        android:layout_marginRight="14dp"
+        android:background="#066966"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp"
+        />
+
+    <ImageView
+        android:id="@+id/refresh"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:visibility="invisible"
+        android:layout_alignRight="@+id/imageView2"
+        android:src="@drawable/refresh" />
+
+    <TextView
+        android:id="@+id/btngroupshow"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/totalcon"
+        android:layout_below="@+id/editTextSearchContact"
+        android:layout_toRightOf="@+id/refresh"
+        android:background="#066966"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:text="Group"
+        android:textColor="#fff"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/btnContactAddNew"
+        android:layout_width="40dp"
+        android:layout_height="24dp"
+        android:layout_above="@+id/cbxContactSelectAll"
+        android:layout_alignTop="@+id/btngroupshow"
+        android:layout_toLeftOf="@+id/imageView2"
+        android:background="#066966"
+        android:gravity="center"
+        android:text="+"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+    <RelativeLayout
+        android:id="@+id/NextPrelay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cbxContactSelectAll" >
+
+        <TextView
+            android:id="@+id/textpageLast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="1" />
+
+        <ImageView
+            android:id="@+id/imgprevious"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/textpageLast"
+            android:src="@drawable/prearrow" />
+
+        <ImageView
+            android:id="@+id/imgnext"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/textpageLast"
+            android:src="@drawable/nextarrow" />
+    </RelativeLayout>
+
+</RelativeLayout>

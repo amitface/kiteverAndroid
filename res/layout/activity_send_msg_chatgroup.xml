@@ -1,0 +1,144 @@
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  android:background="@drawable/school"
+    tools:context="sms19.listview.newproject.SendMsgChatgroup" >
+
+    <LinearLayout
+       android:id="@+id/linearSendMsgChatgp"
+       android:layout_width="fill_parent"
+       android:layout_height="40dp"
+       android:background="#ECE2CF"
+       android:layout_alignParentTop="true"
+       android:orientation="horizontal" >
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="39dp"
+           android:layout_gravity="center"
+           android:layout_weight="0.17"
+           android:background="#ffffff"
+           android:gravity="center"
+           android:paddingLeft="5dp"
+           android:text="Groups"
+           android:textColor="#000000"
+           android:textSize="15sp"
+           android:textStyle="bold" />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="39dp"
+           android:layout_gravity="center"
+           android:layout_weight="0.20"
+           android:background="#C0C0C0"
+           android:id="@+id/rfrdformSendchatgp"
+           android:gravity="center"
+           android:textSize="15sp"
+           android:text="Contacts"
+           android:textColor="#000000"
+           android:textStyle="bold" />
+
+   </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/listSendSmsChatgp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/inboxgrouptemp"
+        android:layout_below="@+id/linearSendMsgChatgp"
+        android:divider="@drawable/dividerlist"
+        android:scrollbars="horizontal" >
+
+    </ListView>
+    <TableRow
+        android:id="@+id/tableSendChatgp"
+        android:layout_width="match_parent"
+        android:background="#DFDEE2"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tableSendChatSendgp"
+        >
+
+        <EditText
+            android:id="@+id/sendMessageinboxChatgp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:background="#DFDEE2"
+            android:ems="10"
+            android:maxLines="1"
+            android:gravity="center"
+            android:hint="Send Message" >
+
+            <requestFocus />
+        </EditText>
+
+        <ImageView
+            android:id="@+id/speakaudiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/mice"
+            />
+        
+        <ImageView
+            android:id="@+id/sendviainboxchatgp"
+            android:layout_width="40dp"
+            android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:visibility="invisible"
+            android:src="@drawable/chatsend" />
+        
+        <ImageView
+            android:id="@+id/sendmediaviaigroupchat"
+            android:layout_width="50dp"
+               android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:src="@drawable/badge" />
+    </TableRow>
+    
+     <TableRow
+        android:id="@+id/tableSendChatSendgp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <CheckBox
+            android:id="@+id/sendMessageinboxChatSendgp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:ems="10"
+            android:textStyle="normal"
+            android:textSize="10sp"
+          android:text="If selected,these messages will reach to inbox of the non-app users and balance will be deducted" >
+        
+      </CheckBox>
+      
+           <TextView
+            android:id="@+id/textcountgp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8.0"
+        
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:textColor="#000000"
+           />
+
+       
+    </TableRow>
+
+     <ImageView
+         android:id="@+id/inboxgrouptemp"
+         android:layout_width="wrap_content"
+         android:layout_height="30dp"
+         android:layout_above="@+id/tableSendChatgp"
+         android:layout_alignParentRight="true"
+         android:layout_weight="1"
+         android:src="@drawable/choose_template"
+         android:visibility="visible" />
+
+</RelativeLayout>

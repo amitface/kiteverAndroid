@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >    
+        
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+         android:layout_marginTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        
+        android:background="@drawable/chat_box_left"
+        >
+        <LinearLayout 
+                android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toLeftOf="@+id/right"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9509274990"
+                android:textColor="@color/new_actionbar_background"
+                />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes ram there.. "
+                android:textColor="@android:color/black"
+                />
+        </LinearLayout>
+        
+          <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jay kumar "
+                 android:gravity="right"
+                 android:layout_marginBottom="5dp"
+                 android:maxLength="25"
+                android:textColor="@color/new_actionbar_background_strip"
+                />
+        
+         <LinearLayout 
+             android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            
+            >
+          
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12:12"
+                android:gravity="right"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/new_actionbar_background"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+    
+
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+          android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/chat_box_right"
+        >
+        
+         <LinearLayout 
+                android:id="@+id/bottom_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toLeftOf="@+id/bottom_right"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            >
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes ram there.. "
+                android:textColor="@android:color/black"
+                />
+        </LinearLayout>
+        
+         
+        
+         <LinearLayout 
+             android:id="@+id/bottom_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            
+            >
+          
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12:12"
+                android:gravity="right"
+                android:drawableRight="@drawable/read"
+              android:drawablePadding="5dp"
+                android:textColor="@color/new_actionbar_background"
+                />
+        </LinearLayout>
+        
+        
+    </RelativeLayout>
+    
+    
+</LinearLayout>
+</FrameLayout>

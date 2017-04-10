@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/school"
+    android:orientation="vertical" >
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/contactbook1"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Phone Book" />
+
+        <Button
+            android:id="@+id/sms191"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button61"
+            android:layout_alignParentTop="true"
+            android:text="sms19  Contact" />
+    </TableRow>
+
+    <CheckBox
+        android:id="@+id/checkBox11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sms191"
+        android:layout_marginTop="14dp"
+        android:text="Select All" />
+
+    <ListView
+        android:id="@+id/listView11"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_above="@+id/inviteall1"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/checkBox11"
+        android:layout_weight="0.84" >
+    </ListView>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/inviteall1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          
+            android:background="@drawable/backgroundbtn"
+            android:text="Invite All"
+            android:layout_weight="1"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+<Button
+            android:id="@+id/invitedpeople1"
+            android:layout_width="wrap_content"
+            android:background="#FFFFFF"
+            android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:textSize="12sp"
+            android:text="Invited People" />
+        <Button
+            android:id="@+id/button61"
+            android:layout_width="wrap_content"
+              android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backgroundbtn"
+            android:text="Invite Selected"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+    </TableRow>
+
+</LinearLayout>

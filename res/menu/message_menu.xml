@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!--  android:icon="@drawable/ic_email"
+     android:icon="@drawable/ic_calendar"
+    -->
+
+    <item android:title="Setting Sms/Mail"
+        android:id="@+id/setting_sms_email"
+        android:showAsAction="never" />
+    <item android:title="Scheduled Sms/Mail"
+        android:id="@+id/scheduled_sms_email"
+        android:showAsAction="never" />
+    <item android:title="Send SMS/Mail"
+        android:id="@+id/send_sms_mail"
+        android:showAsAction="never"
+         />
+</menu>

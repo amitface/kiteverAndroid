@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Splash Screen -->
+    <dimen name="accept_btn_mt">250dp</dimen>
+    <dimen name="tp_btn_mt">30dp</dimen>
+    <dimen name="heardertext_size">40sp</dimen>
+    <!-- Registration Screen -->
+    <dimen name="normal_text_size">24sp</dimen>
+    <dimen name="phonetxt_text_mt">45dp</dimen>
+    <dimen name="numberlay_mt">35dp</dimen>
+    <dimen name="numberlay_p_lr">10dp</dimen>
+    <dimen name="countrycode_text_size">24sp</dimen>
+    <dimen name="countrycode_mt">16dp</dimen>
+    <dimen name="number_et_mt">15dp</dimen>
+    <dimen name="number_et_ml">15dp</dimen>
+    <dimen name="number_et_p_tb">5dp</dimen>
+    <dimen name="number_et_textsize">35sp</dimen>
+    <dimen name="next_btn_mt">35dp</dimen>
+    <!-- Confrm Dialog Screen -->
+    <dimen name="C_d_wn">490dp</dimen>
+    <dimen name="C_d_hn">308dp</dimen>
+    <dimen name="cnfrmlay_mtn">40dp</dimen>
+    <dimen name="cnfrmlay_pln">30dp</dimen>
+    <dimen name="cnfrmlay_prn">20dp</dimen>
+    <dimen name="cnfrmtxt_mln">15dp</dimen>
+    <dimen name="cnfrmtxt_sizen">35sp</dimen>
+    <dimen name="btn_lay_mbn">23dp</dimen>
+    <dimen name="btn_lay_h">63dp</dimen>
+    <dimen name="btn_mn">10dp</dimen>
+    <dimen name="dialog_btn_text_size">30sp</dimen>
+    <dimen name="number_mln">60dp</dimen>
+    <dimen name="number_mtn">50dp</dimen>
+    <dimen name="number_textsizen">30sp</dimen>
+    <!-- Verification Screen -->
+    <dimen name="back_btn_p">20dp</dimen>
+    <dimen name="code_et_m_tb">50dp</dimen>
+    <dimen name="seprator_mb">40dp</dimen>
+    <!-- Start UmnoChat Screen -->
+    <dimen name="seton_text_mt">25dp</dimen>
+    <dimen name="profile_pic_mtb">43dp</dimen>
+    <dimen name="profilepic_size">165dp</dimen>
+    <dimen name="name_p_l">100dp</dimen>
+    <dimen name="letschat_btn_mt">45dp</dimen>
+    <dimen name="lazytext_mt">10dp</dimen>
+     <!-- Editprofile Screen -->
+    <dimen name="p_profilepic_size">140dp</dimen>
+    <dimen name="p_my_pic_mt">60dp</dimen>
+    <dimen name="p_changeimgtxt_mt">1dp</dimen>
+    <dimen name="p_changeimgtxt_txtsize">26sp</dimen>
+    <dimen name="p_name_et_mt">60sp</dimen>
+
+</resources>

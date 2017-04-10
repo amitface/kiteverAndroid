@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:minHeight="100dp"
+    android:weightSum="5">
+
+    <TextView
+        android:id="@+id/tvMicroSiteDate"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/tableborder"
+        android:gravity="center"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/tvMicroSiteSource"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/tableborder"
+        android:gravity="center"
+        android:padding="5dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:background="@drawable/tableborder"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+            <TableRow>
+                <TextView
+                    android:text="Name :"
+                    android:padding="3dip" />
+                <TextView
+                    android:id="@+id/tablerowMicroSite1"
+                    android:text="test2"
+                    android:gravity="left"
+                    android:padding="3dip" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+
+                    android:text="Email :"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="test4"
+                    android:id="@+id/tablerowMicroSite2"
+                    android:gravity="left"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Moblie :"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="test4"
+                    android:id="@+id/tablerowMicroSite3"
+                    android:gravity="left"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+
+                    android:text="Address :"
+                    android:padding="3dip" />
+                <TextView
+                    android:text="test4"
+                    android:id="@+id/tablerowMicroSite4"
+                    android:gravity="left"
+                    android:padding="3dip" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</LinearLayout>

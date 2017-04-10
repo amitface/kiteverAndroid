@@ -1,0 +1,158 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="sms19.inapp.msg.InAppMessageActivity" >
+
+    <!-- android:title="Create group" -->
+    
+  
+    
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@drawable/magnaify"
+        android:title="Search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always|collapseActionView"/>
+    <item
+        android:id="@+id/action_m"
+        android:icon="@drawable/menu_dots"
+        android:title=""
+        app:showAsAction="always">
+        <menu
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            tools:context="sms19.inapp.msg.InAppMessageActivity" >
+            <item
+                android:id="@+id/create_group"
+              
+                android:orderInCategory="100"
+                android:title="Create group"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/contact_new_contact"
+                android:orderInCategory="100"
+                android:title="Create Contact"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/create_broadcast"
+                android:orderInCategory="100"
+                android:title="Create BroadCast"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/sort_by_recent"
+                android:orderInCategory="100"
+                android:showAsAction="never"
+                android:title="Sort By Recency"/>
+            <item
+                android:id="@+id/sort_by_name"
+                android:orderInCategory="100"
+                android:title="Sort By Name"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/sort_by_mostcontact"
+                android:orderInCategory="100"
+                android:title="Sort By Most Contacted"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/settings"
+                android:orderInCategory="100"
+                android:title="Settings"
+                app:showAsAction="never"/>
+
+            <!-- groups and contact page menu item -->
+
+            <item
+                android:id="@+id/contact_search"
+                android:orderInCategory="100"
+                android:title="Search"
+                app:showAsAction="never"/>
+            <!-- <item
+                android:id="@+id/refresh"
+                android:orderInCategory="100"
+                android:title="Refresh"
+                app:showAsAction="never"/> -->
+          <!--   <item
+                android:id="@+id/contact_new_contact"
+                android:orderInCategory="100"
+                android:title="Create Contact"
+                app:showAsAction="never"/>
+             -->
+            
+            
+            <item
+                android:id="@+id/contact_new_groups"
+                android:orderInCategory="100"
+                android:title="Create Group"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/contact_sort_by_alphabets"
+                android:orderInCategory="100"
+                android:title="Sort By Name"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/contact_sort_by_number"
+                android:orderInCategory="100"
+                android:title="Sort by Mobile"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/contact_and_group_app_user"
+                android:orderInCategory="100"
+                android:title="App users only"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/contact_and_group_nonapp_user"
+                android:orderInCategory="100"
+                android:title="Non App Users Only"
+                app:showAsAction="never"/>
+            
+            <item
+                android:id="@+id/refresh"
+                android:orderInCategory="100"
+                android:title="Refresh"
+                app:showAsAction="never"/>
+
+            <!-- Single user chat page menu item -->
+            <item
+                android:id="@+id/view_contact_single_user"
+                android:orderInCategory="100"
+                android:title="View Contact"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/search_single_user"
+                android:orderInCategory="100"
+                android:title="Search"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/block_contact_single_user"
+                android:orderInCategory="100"
+                android:title="Block Contact"
+                app:showAsAction="never"/>
+
+            <!-- Group chat page menu item -->
+
+            <item
+                android:id="@+id/group_info"
+                android:orderInCategory="100"
+                android:title="Group Info"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/search_chatpage"
+                android:orderInCategory="100"
+                android:title="Search"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/delete_group"
+                android:orderInCategory="100"
+                android:title="Delete Group"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/exit_group"
+                android:orderInCategory="100"
+                android:title="Exit Group"
+                app:showAsAction="never"/>
+
+            <!-- On group chat screen -->
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <!-- <gradient
+        android:angle="270"
+        android:endColor="@color/new_actionbar_background_strip"
+        android:startColor="@color/new_actionbar_background_strip" /> -->
+
+    <solid 
+               android:color="@color/new_actionbar_background_strip"/>
+    <size android:height="15dp"
+   android:width="15dp"/>
+</shape>

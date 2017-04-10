@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/posPurchaseList"
+        android:showAsAction="never"
+        android:title="Purchase" />
+    <item
+        android:id="@+id/posPurchasePayments"
+        android:showAsAction="never"
+        android:title="Payment" />
+    <item
+        android:id="@+id/posPurchaseOustanding"
+        android:showAsAction="never"
+        android:title="Outstanding" />
+
+</menu>

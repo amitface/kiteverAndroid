@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layoutInventoryAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/poputitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bottom_text"
+            android:gravity="center"
+            android:minHeight="35dp"
+            android:text="Inventory"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/tableborder"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="Initial Quantity" />
+
+            <TextView
+                android:id="@+id/tvInventoryQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Quantity"
+                android:gravity="left|center"
+                android:minHeight="35dp" />
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/etInventoryAddQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/tableborder"
+            android:hint="Quantity"
+            android:inputType="numberSigned"
+            android:minHeight="45dp"
+            android:maxLength="15"
+            android:padding="5dp" />
+
+        <LinearLayout
+            android:id="@+id/layoutInventoryAddQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:visibility="gone"
+            android:background="@drawable/tableborder"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="Final Quantity" />
+
+            <TextView
+                android:id="@+id/tvInventoryfinalQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Quantity"
+                android:gravity="left|center"
+                android:minHeight="35dp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etInventoryAddRemarks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/tableborder"
+            android:hint="Remark"
+            android:inputType="textMultiLine"
+            android:minHeight="105dp"
+            android:padding="5dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btnInventoryAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/bottom_text"
+        android:gravity="center"
+        android:minHeight="55dp"
+        android:text="Add"
+        android:textColor="@color/white" />
+</RelativeLayout>

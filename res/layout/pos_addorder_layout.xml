@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/page_main_layout"
+    android:background="@color/listview_background">
+
+    <include
+        android:id="@+id/include_setting"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/footer_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:visibility="gone"
+        layout="@layout/pos_bottom_bar_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:layout_margin="10dp">
+            <RelativeLayout
+                android:id="@+id/first_layout"
+                style="@style/OrderScreenLayout"
+                android:visibility="visible"
+                >
+
+
+                <RelativeLayout
+                    android:id="@+id/date_layout"
+                    style="@style/OrderScreen"
+                    >
+
+                    <ImageView
+                        android:id="@+id/date_icon"
+                        android:layout_width="@dimen/order_icon_width"
+                        android:layout_height="@dimen/order_icon_width"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_calendar" />
+
+                    <EditText
+                        android:id="@+id/orderdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@+id/date_icon"
+                        android:focusable="false"
+                        android:hint="Order Date"
+                        android:textSize="@dimen/order_text_size"
+                        android:padding="5dp"
+                        android:textColor="#000" />
+                </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/contact_layout"
+                style="@style/OrderScreen"
+                android:layout_below="@+id/date_layout">
+
+                <ImageView
+                    android:id="@+id/contact_icon"
+                    android:layout_width="@dimen/order_icon_width"
+                    android:layout_height="@dimen/order_icon_width"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/contact_icon" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/contact_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/contact_icon"
+                    android:background="@drawable/input"
+                    android:hint="Search Mobile or Name"
+                    android:textSize="@dimen/order_text_size"
+                    android:padding="5dp" >
+                </AutoCompleteTextView>
+
+                <ImageView
+                    android:id="@+id/add_btn"
+                    android:layout_width="@dimen/order_icon_width"
+                    android:layout_height="@dimen/order_icon_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/group_plus" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/total_price_layout"
+                style="@style/OrderScreen"
+                android:layout_below="@+id/contact_layout"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3" >
+
+                    <RelativeLayout
+                        android:id="@+id/item_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical" >
+
+                        <ImageView
+                            android:id="@+id/total_price_icon"
+                            android:layout_width="@dimen/order_icon_width"
+                           android:layout_height="@dimen/order_icon_width"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/totalprice" />
+
+                        <TextView
+                            android:id="@+id/item_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_toRightOf="@+id/total_price_icon"
+                            android:background="@drawable/editbox_bottom"
+                            android:padding="5dp"
+                            android:text="Select item"
+                            android:textColor="#000"
+                            android:elevation="10dp"
+                            android:textSize="@dimen/order_text_size"
+                            android:visibility="gone" />
+
+                        <Spinner
+                            android:id="@+id/select_item"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/order_text_size"
+                            android:spinnerMode="dropdown"
+                            android:layout_alignBottom="@+id/total_price_icon"
+                            android:layout_toRightOf="@+id/total_price_icon"
+                            android:layout_toEndOf="@+id/total_price_icon" />
+
+                        <!--
+                             <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/item_txt"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_toRightOf="@+id/total_price_icon"
+                            android:background="#8b8b8b" />
+                        -->
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical" >
+
+                        <EditText
+                            android:id="@+id/total_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:hint="Total Price"
+                            android:textSize="@dimen/order_text_size"
+                            android:padding="5dp"
+                            android:textColor="#000" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/order_tax_include"
+                android:layout_below="@+id/total_price_layout"
+                style="@style/OrderScreen"
+                 >
+
+                <ImageView
+                    android:id="@+id/tax_amt_icon"
+                    android:layout_width="@dimen/order_icon_width"
+                   android:layout_height="@dimen/order_icon_width"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/tax" />
+
+
+                <Switch
+                    android:id="@+id/taxswitch"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/tax_amt_icon"
+                    android:hint="Tax Excluded"
+                    android:textColor="@color/listview_font_color"
+                    android:textSize="@dimen/order_text_size"
+                     />
+
+
+
+            </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/order_biil_to"
+                    android:layout_below="@+id/order_tax_include"
+                    style="@style/OrderScreen"
+                    >
+
+                    <ImageView
+                        android:id="@+id/bill_to_icon"
+                        android:layout_width="@dimen/order_icon_width"
+                        android:layout_height="@dimen/order_icon_width"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/description" />
+
+
+                    <Switch
+                        android:id="@+id/billswitch"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/bill_to_icon"
+                        android:hint="Biil to individual"
+                        android:textColor="@color/listview_font_color"
+                        android:textSize="@dimen/order_text_size"
+                        />
+
+
+
+                </RelativeLayout>
+
+
+
+
+           </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/second_layout"
+                style="@style/OrderScreenLayout"
+                android:layout_below="@+id/first_layout"
+
+                >
+
+                <RelativeLayout
+                    android:id="@+id/discount_switch_layout"
+                    android:layout_below="@+id/date_layout"
+                    style="@style/OrderScreen" >
+
+                    <ImageView
+                        android:id="@+id/discount_icon"
+                        android:layout_width="@dimen/order_icon_width"
+                       android:layout_height="@dimen/order_icon_width"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/discount" />
+
+                    <EditText
+                        android:id="@+id/discount_percentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@+id/discount_icon"
+                        android:hint="Discount%"
+                        android:inputType="phone"
+                        android:maxLength="3"
+                        android:padding="5dp"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/discount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@+id/discount_icon"
+                        android:hint="Discount Amt"
+                        android:maxLength="6"
+                        android:textSize="@dimen/order_text_size"
+                        android:inputType="phone"
+                        android:padding="5dp" />
+
+                    <ToggleButton
+                        android:id="@+id/discount_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/toggle_amt"
+                        android:checked="true"
+                        android:textOff=""
+                        android:textSize="@dimen/order_text_size"
+                        android:textOn="" />
+                </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/order_tax_layout"
+                android:layout_below="@+id/discount_switch_layout"
+                style="@style/OrderScreen" >
+
+                <ImageView
+                    android:id="@+id/tax_amt_icon"
+                    android:layout_width="@dimen/order_icon_width"
+                   android:layout_height="@dimen/order_icon_width"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/description" />
+
+                <TextView
+                    android:id="@+id/select_tax_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/tax_amt_icon"
+                    android:padding="5dp"
+                    android:textSize="@dimen/order_text_size"
+                    android:text="Select Tax"
+                     />
+
+
+            </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/selected_tax_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/order_tax_layout"
+                   android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal" >
+
+                    <org.lucasr.twowayview.TwoWayView
+                        android:id="@+id/taxitems"
+                        style="@style/TwoWayView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+             <RelativeLayout
+                android:id="@+id/other_charge_layout"
+                android:layout_below="@+id/selected_tax_layout"
+                 style="@style/OrderScreen" >
+
+                <ImageView
+                    android:id="@+id/other_amt_icon"
+                    android:layout_width="@dimen/order_icon_width"
+                   android:layout_height="@dimen/order_icon_width"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/categorytype" />
+
+                <TextView
+                    android:id="@+id/select_other_charges"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/other_amt_icon"
+                    android:padding="5dp"
+                    android:textSize="@dimen/order_text_size"
+                    android:text="Other Charges" />
+
+
+            </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/selected_othercharge_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/other_charge_layout"
+                    android:orientation="horizontal" >
+
+                    <org.lucasr.twowayview.TwoWayView
+                        android:id="@+id/othersitem"
+                        style="@style/TwoWayView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/billing_amt_layout"
+                android:layout_below="@+id/selected_othercharge_layout"
+                android:visibility="gone"
+                style="@style/OrderScreen" >
+
+                <ImageView
+                    android:id="@+id/billing_amt_icon"
+                    android:layout_width="@dimen/order_icon_width"
+                   android:layout_height="@dimen/order_icon_width"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/money_bag_icon" />
+
+                <EditText
+                    android:id="@+id/billing_amt"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/billing_amt_icon"
+                    android:hint="Billing amount"
+                    android:padding="5dp"
+                    android:textSize="@dimen/order_text_size"
+                    android:textColor="#000" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                 android:id="@+id/total_bill_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:visibility="gone"
+                android:layout_below="@+id/billing_amt_layout" >
+
+                <TableLayout
+                     android:id="@+id/total_bill__table_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                    <TableRow
+                        android:id="@+id/actual_amount_row"
+                        android:layout_marginTop="2dip" >
+
+
+                        <TextView
+                            android:id="@+id/actual_amount_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_span="2"
+                            android:text="Actual Amount"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/actual_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="50"
+                            />
+
+
+                    </TableRow>
+
+
+                    <TableRow android:layout_marginTop="2dip" >
+
+
+                       <TextView
+                        android:id="@+id/dicountedPricetxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                           android:layout_span="2"
+                        android:text="(-) Discount"
+                         />
+
+                       <TextView
+                        android:id="@+id/dicountedPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="100"
+                         />
+                        </TableRow>
+
+                    <TableRow android:layout_marginTop="2dip" >
+
+                        <TextView
+                            android:id="@+id/basePricetxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_span="2"
+                            android:text="Amount after discount"
+                            />
+
+                        <TextView
+                            android:id="@+id/basePrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="500"
+                            />
+                        <TextView
+                            android:id="@+id/inclusive_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:textSize="10sp"
+                            android:text=""
+                            />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/exclude_tax"
+                        android:layout_marginTop="2dip" >
+
+
+                          <TextView
+                        android:id="@+id/totaltaxtxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                              android:layout_span="2"
+                        android:text="(+) Total Tax"
+                        />
+
+
+                          <TextView
+                        android:id="@+id/totaltax"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="50"
+                        />
+                        </TableRow>
+
+                    <TableRow android:layout_marginTop="2dip" >
+
+                          <TextView
+                        android:id="@+id/otherPricetxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                              android:layout_span="2"
+                        android:text="(+) Other Chargess"
+                         />
+                          <TextView
+                        android:id="@+id/otherPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="100 "
+                         />
+                        </TableRow>
+
+                      <TableRow android:layout_marginTop="2dip" >
+
+                         <View
+                        android:id="@+id/totalpricetxtview"
+                        android:layout_width="wrap_content"
+                            android:layout_span="3"
+                            android:background="#808080"
+                        android:layout_height="1dp"
+                         />
+                          </TableRow>
+
+                    <TableRow android:layout_marginTop="2dip" >
+
+                    <TextView
+                        android:id="@+id/totalprice_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="Total Price"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/totalpricetxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/rsicon"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/totalprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="600"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                    <TableRow android:layout_marginTop="2dip" >
+
+
+
+                        <TextView
+                            android:id="@+id/round_off_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="Round Off Total Price"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/roundoffpricetxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/rsicon"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/roundoffprice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="600"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+
+
+               </TableLayout>
+
+
+            </LinearLayout>
+
+             </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/third_layout"
+                style="@style/OrderScreenLayout"
+                android:layout_below="@+id/second_layout"
+                android:layout_marginBottom="10dp"
+                >
+
+
+
+            <RelativeLayout
+                android:id="@+id/paid_amt_layout"
+                style="@style/OrderScreen"
+                >
+
+                <ImageView
+                    android:id="@+id/paid_amt_icon"
+                    android:layout_width="@dimen/order_icon_width"
+                   android:layout_height="@dimen/order_icon_width"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/paid_amount" />
+
+                <EditText
+                    android:id="@+id/paid_amt"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/paid_amt_icon"
+                    android:hint="Paid amount"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10"
+                    android:textSize="@dimen/order_text_size"
+                    android:padding="5dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/balance_layout"
+                style="@style/OrderScreen"
+                android:layout_below="@+id/paid_amt_layout"
+                 >
+
+                <ImageView
+                    android:id="@+id/balance_icon"
+                    android:layout_width="@dimen/order_icon_width"
+                   android:layout_height="@dimen/order_icon_width"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/balance_iocn" />
+
+                <EditText
+                    android:id="@+id/balance"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/balance_icon"
+                    android:hint="Balance"
+                    android:textSize="@dimen/order_text_size"
+                    android:padding="5dp"
+                    android:textColor="#000" />
+            </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/payment_layout"
+                style="@style/OrderScreen"
+                android:layout_below="@+id/balance_layout"
+                android:layout_marginBottom="55dp"
+                >
+                <!--android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_below="@+id/date_layout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle_shape_layout" >-->
+
+                <ImageView
+                    android:id="@+id/payment_icon"
+                    android:layout_width="@dimen/order_icon_width"
+                    android:layout_height="@dimen/order_icon_width"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/modeof_payment" />
+
+                <Spinner
+                    android:id="@+id/mode_payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/payment_icon"
+                    android:gravity="center_vertical"
+                    android:paddingRight="20dp"
+                    android:spinnerMode="dropdown"
+                    />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:visibility="gone"
+                    android:background="#8e8e8e" />
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:visibility="gone"
+                    android:src="@drawable/dpdown" />
+            </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/include_setting"
+        android:layout_toEndOf="@+id/include_setting">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+             >
+
+            <TextView
+                android:id="@+id/btn_add_without_invoice"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/block_user"
+                android:gravity="center"
+                android:padding="7dp"
+                android:text="Add Order"
+                android:visibility="gone"
+                android:textSize="@dimen/order_text_size"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/btn_add_invoice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_margin="5dp"
+                android:background="#006699"
+                android:gravity="center"
+                android:padding="7dp"
+                android:textSize="@dimen/order_text_size"
+                android:text="Add Order &amp; Invoice"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

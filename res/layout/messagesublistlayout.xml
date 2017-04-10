@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    	android:background="@drawable/school"
+
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    
+
+    <ListView
+        android:id="@+id/readmessagelist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_weight="122.58"
+        android:scrollbars="none"
+        android:gravity="center" >
+
+    </ListView>
+
+<RelativeLayout 
+    android:layout_weight="1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    
+</RelativeLayout>
+<LinearLayout
+    android:orientation="vertical"
+    
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+ 
+<TableRow
+     android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+<Button
+    android:id="@+id/optout"
+    android:gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="OptOut/Block" />
+
+<Button
+    android:id="@+id/addtocontacts"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+  android:layout_weight="1"
+ 
+  android:gravity="center"
+    android:text="Add to contacts" />
+
+   <ImageView
+        android:id="@+id/inboxchostemp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:src="@drawable/choose_template" />
+</TableRow>
+</LinearLayout>
+    <TableRow
+        android:layout_width="match_parent"
+              android:background="#ffffff"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/getMessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+           android:maxLines="1"
+           android:singleLine="true"
+        
+            android:ems="10"
+            android:hint="Reply Here"
+            android:gravity="center" >
+
+            <requestFocus />
+        </EditText>
+
+        <ImageView
+            android:id="@+id/speakaudio"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/mice"
+            />
+      
+        <ImageView
+            android:id="@+id/sendviachat"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+        android:visibility="invisible"
+         
+            android:src="@drawable/chatsend" />
+
+        <ImageView
+            android:id="@+id/sendimage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+        
+            android:src="@drawable/badge" />
+        
+    </TableRow>
+ <TableRow
+        android:layout_width="match_parent"
+       
+        android:layout_height="wrap_content" >
+       <CheckBox
+           android:id="@+id/checkboxsendapp"
+           android:layout_width="250dp"
+           android:layout_height="wrap_content"
+           android:layout_alignParentTop="true"
+           android:text="If selected,these messages will reach to inbox of the non-app users and balance will be deducted"
+           android:textSize="10sp"
+           android:textStyle="normal" >
+
+        </CheckBox>
+
+       <TextView
+           android:id="@+id/countcharactersall"
+           android:layout_width="wrap_content"
+           android:layout_marginLeft="4dp"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:visibility="gone"
+           android:textStyle="bold"
+           android:layout_height="wrap_content"
+           android:text="0" />
+
+       <TextView
+           android:id="@+id/hidetext"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:visibility="gone"
+            android:textStyle="bold"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="/138" />
+
+        </TableRow>
+       
+       
+       
+    </LinearLayout>
+
+</LinearLayout>

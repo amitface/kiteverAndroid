@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" >
+   <gradient
+        android:angle="45"
+        android:centerColor="#800000"
+        android:endColor="#800000"
+        android:startColor="#800000" />
+    <corners android:radius="8dp" />  
+
+</animation-list>

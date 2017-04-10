@@ -1,0 +1,111 @@
+       <ScrollView 
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+                android:padding="3dp"
+                 android:background="@drawable/school"
+            >
+            
+    
+    <RelativeLayout
+    android:layout_width="fill_parent"
+
+   
+    android:layout_height="wrap_content" >
+    
+     
+    <ImageView
+        android:id="@+id/imageVFirstHome"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+       
+        android:src="@drawable/bulksmsimage" />
+
+    
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Button01"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/badge"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/Login"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/login"
+        android:gravity="center"
+        android:layout_margin="40dp"
+      
+       />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+       
+    android:layout_below="@+id/textView1"
+              android:background="@drawable/badge" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageVFirstHome"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Sign Up"
+        android:layout_marginTop="30dp"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignBaseline="@+id/lgplus"
+        android:layout_alignBottom="@+id/lgplus"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/sup"
+        android:paddingEnd="30dp"
+        android:paddingLeft="20dp"
+        android:paddingStart="30dp"
+        android:textColor="#ffffff"
+        android:textSize="14.0sp" />
+
+    <Button
+        android:id="@+id/lgplus"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView4"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/gplus"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignBaseline="@+id/signup"
+        android:layout_alignBottom="@+id/signup"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/fbv" />
+    
+</RelativeLayout>
+
+</ScrollView>
+    
+    

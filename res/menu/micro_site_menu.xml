@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/leadsMicroSite"
+        android:showAsAction="never"
+        android:title="Leads" />
+
+    <item
+        android:id="@+id/viewMicroSite"
+        android:showAsAction="never"
+        android:title="View" />
+   <!-- <item
+        android:id="@+id/editMicroSite"
+        android:showAsAction="never"
+        android:title="Edit" />-->
+    <item
+        android:id="@+id/createMicroSite"
+        android:showAsAction="never"
+        android:title="Create" />
+</menu>

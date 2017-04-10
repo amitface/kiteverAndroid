@@ -1,0 +1,1031 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/page_main_layout">
+
+    <ScrollView
+        android:id="@+id/scrollview_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:background="@color/listview_background"
+        android:paddingBottom="@dimen/listview_bottom_padding"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <!-- Invoice Header -->
+            <RelativeLayout
+                android:id="@+id/invoice_layout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:minHeight="30dp">
+
+                <ImageView
+                    android:id="@+id/print_icon"
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/invoice_setting" />
+
+                <TextView
+                    android:id="@+id/setting_invoice_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/print_icon"
+                    android:text="Invoice"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/setting_dropdown1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:rotation="270"
+                    android:src="@drawable/back_new"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+           <!-- <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="2dp"
+                android:background="@color/list_divider_color" />-->
+
+            <!-- Invoice Content -->
+            <LinearLayout
+                android:id="@+id/invoice_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:elevation="5dp"
+                android:background="@drawable/border_black"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    >
+
+                    <Switch android:id="@+id/invoice_header_enable"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:checked="false"
+                        android:text="Invoice Header  "/>
+                    <ImageView
+                        android:id="@+id/invoice_header_click"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_template_sms"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    >
+
+                    <Switch android:id="@+id/invoice_footer_enable"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:checked="false"
+                        android:text="Invoice Footer  "/>
+                    <ImageView
+                        android:id="@+id/invoice_footer_click"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_template_sms"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    >
+
+                    <Switch android:id="@+id/receipt_header_enable"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:checked="false"
+                        android:text="Receipt Header  "/>
+                    <ImageView
+                        android:id="@+id/receipt_header_click"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_template_sms"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    >
+
+                    <Switch android:id="@+id/receipt_footer_enable"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:checked="false"
+                        android:text="Receipt Footer  "/>
+                    <ImageView
+                        android:id="@+id/receipt_footer_click"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_template_sms"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    >
+
+                    <Switch android:id="@+id/invoice_footer_enable"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Invoice Footer  "/>
+                    <ImageView
+                        android:id="@+id/footer_click"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_template_sms"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/setting_invoice_prefix_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/setting_edit_text_square"
+                    android:gravity="start"
+                    android:padding="2dp"
+                    android:textSize="10sp"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/setting_invoice_prefix"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/setting_edit_text_square"
+                    android:gravity="start"
+                    android:hint="Invoice Prefix*"
+                    android:maxLength="@integer/edit_view_length"
+                    android:minHeight="30dp"
+                    android:padding="5dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="10dp"
+                    android:stretchColumns="5"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/setting_order_prefix_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/setting_edit_text_square"
+                    android:gravity="start"
+                    android:padding="2dp"
+                    android:text=""
+                    android:textSize="10sp" />
+
+                <EditText
+                    android:id="@+id/setting_order_prefix"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/setting_edit_text_square"
+                    android:gravity="start"
+                    android:hint="Order Prefix*"
+                    android:maxLength="@integer/edit_view_length"
+                    android:minHeight="30dp"
+                    android:padding="5dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="10dp"
+                    android:stretchColumns="5"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/setting_invoice_number_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/setting_edit_text_square"
+                    android:gravity="start"
+                    android:padding="2dp"
+                    android:text=""
+                    android:textSize="10sp"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/setting_invoice_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/setting_edit_text_square"
+                    android:gravity="start"
+                    android:hint="Invoice No. Start*"
+                    android:maxLength="@integer/edit_view_length"
+                    android:minHeight="30dp"
+                    android:padding="5dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="10dp"
+                    android:stretchColumns="5"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/setting_receipt_number_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/setting_edit_text_square"
+                    android:gravity="start"
+                    android:padding="2dp"
+                    android:text=""
+                    android:textSize="10sp"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/setting_receipt_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/setting_edit_text_square"
+                    android:gravity="start"
+                    android:hint="Receipt No. Start*"
+                    android:maxLength="@integer/edit_view_length"
+                    android:minHeight="30dp"
+                    android:padding="5dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="10dp"
+                    android:stretchColumns="5"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/setting_pan_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/setting_edit_text_square"
+                    android:gravity="start"
+                    android:padding="2dp"
+                    android:text=""
+                    android:textSize="10sp"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/setting_pan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/setting_edit_text_square"
+                    android:gravity="start"
+                    android:hint="PAN No."
+                    android:maxLength="@integer/edit_view_length"
+                    android:minHeight="30dp"
+                    android:padding="5dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="10dp"
+                    android:stretchColumns="5"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/setting_tin_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/setting_edit_text_square"
+                    android:gravity="start"
+                    android:padding="2dp"
+                    android:textSize="10sp"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/setting_tin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/setting_edit_text_square"
+                    android:gravity="start"
+                    android:hint="Tin"
+                    android:maxLength="@integer/edit_view_length"
+                    android:minHeight="30dp"
+                    android:padding="5dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="10dp"
+                    android:stretchColumns="5"
+                    android:textSize="14sp" />
+
+
+
+                <TextView
+                    android:id="@+id/setting_service_tax_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/setting_edit_text_square"
+                    android:gravity="start"
+                    android:padding="2dp"
+                    android:textSize="10sp"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/setting_service_tax"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/setting_edit_text_square"
+                    android:gravity="start"
+                    android:hint="Service Tax No."
+                    android:maxLength="@integer/edit_view_length"
+                    android:minHeight="30dp"
+                    android:padding="5dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="10dp"
+                    android:stretchColumns="5"
+                    android:textSize="14sp" />
+
+
+
+
+                <TextView
+                    android:id="@+id/setting_gst_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/setting_edit_text_square"
+                    android:gravity="start"
+                    android:padding="2dp"
+                    android:text=""
+                    android:textSize="10sp" />
+
+                <EditText
+                    android:id="@+id/setting_gst"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/setting_edit_text_square"
+                    android:enabled="false"
+                    android:gravity="start"
+                    android:hint="GST (coming soon)"
+                    android:maxLength="@integer/edit_view_length"
+                    android:minHeight="30dp"
+                    android:padding="5dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="10dp"
+                    android:stretchColumns="5"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/invoice_radio_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="2dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="end"
+                    android:text="Product price includes tax" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/radio_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/note_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="2dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="start"
+                    android:text="*Cannot be edited, once an order is generateds" />
+
+                <Button
+                    android:id="@+id/submit_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:text="Save Settings" />
+
+            </LinearLayout>
+            <!-- Invoice Content Ends Here-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/list_divider_color" />
+            <!-- Alert Settings Header -->
+            <RelativeLayout
+                android:id="@+id/alert_layout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <ImageView
+                    android:id="@+id/alert_icon"
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/alert1" />
+
+                <TextView
+                    android:id="@+id/setting_alert_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/alert_icon"
+                    android:text="Alert Settings"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+
+
+            <!--Alert Settings Content -->
+
+            <LinearLayout
+                android:id="@+id/alert_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:layout_margin="10dp"
+                android:elevation="5dp"
+                android:background="@drawable/border_black"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/alert_order"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_weight=".6"
+                        android:text="Order"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/sms_invoice"
+                        style="@style/Sms_Icon_Style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2" />
+
+                    <TextView
+                        android:id="@+id/mail_invoice"
+                        style="@style/Mail_Icon_Style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="2dp"
+                    android:background="@color/list_divider_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:orientation="horizontal"
+                    android:padding="3dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/alert_payment"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_weight=".6"
+                        android:text="Payment"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/sms_payment"
+                        style="@style/Sms_Icon_Style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2" />
+
+                    <TextView
+                        android:id="@+id/mail_payment"
+                        style="@style/Mail_Icon_Style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="2dp"
+                    android:background="@color/list_divider_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:orientation="horizontal"
+                    android:padding="3dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/alert_credit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_weight=".6"
+                        android:text="Credit"
+
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/sms_credit"
+                        style="@style/Sms_Icon_Style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2" />
+
+                    <TextView
+                        android:id="@+id/mail_credit"
+                        style="@style/Mail_Icon_Style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!-- Alert Settings content end here -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/list_divider_color" />
+            <!-- Report Header -->
+            <RelativeLayout
+                android:id="@+id/report_layout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/setting_report_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/print_icon"
+                    android:text="Report"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/print_icon"
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_marginLeft="12dp"
+                    android:src="@drawable/report"
+                    android:layout_alignTop="@+id/setting_report_title"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="12dp" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/list_divider_color" />
+            <!-- Report Content -->
+
+
+            <LinearLayout
+                android:id="@+id/report_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:elevation="5dp"
+                android:background="@drawable/border_black"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/report_order"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_weight=".6"
+                        android:text="Order"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/report_order_sms"
+                        style="@style/Sms_Icon_Style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2" />
+
+                    <TextView
+                        android:id="@+id/report_order_mail"
+                        style="@style/Mail_Icon_Style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="2dp"
+                    android:background="@color/list_divider_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:orientation="horizontal"
+                    android:padding="3dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/report_payment"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_weight=".6"
+                        android:text="Payment"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/report_payment_sms"
+                        style="@style/Sms_Icon_Style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2" />
+
+                    <TextView
+                        android:id="@+id/report_payment_mail"
+                        style="@style/Mail_Icon_Style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="2dp"
+                    android:background="@color/list_divider_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:orientation="horizontal"
+                    android:padding="3dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/report_credit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_weight=".6"
+                        android:text="Credit"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/report_credit_sms"
+                        style="@style/Sms_Icon_Style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2" />
+
+                    <TextView
+                        android:id="@+id/report_credit_mail"
+                        style="@style/Mail_Icon_Style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+         <!--   <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="2dp"
+                android:background="@color/list_divider_color" />-->
+
+
+            <RelativeLayout
+                android:id="@+id/payment_gateway_layout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/setting_gateway_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/payment_gate_icon"
+                    android:text="Payment Gateway"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/payment_gate_icon"
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_marginStart="12dp"
+                    android:src="@drawable/modeof_payment"
+                    android:layout_alignBottom="@+id/setting_gateway_title"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/list_divider_color" />
+
+            <LinearLayout
+                android:id="@+id/payment_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:elevation="5dp"
+                android:background="@drawable/border_black"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:layout_margin="10dp">
+                <Spinner
+                    android:id="@+id/payment_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/payment_gateway">
+
+                </Spinner>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:id="@+id/payment_key_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Key : "/>
+                    <EditText
+                        android:id="@+id/payment_key"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:background="@drawable/editbox_bottom"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:id="@+id/payment_salt_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Salt :"/>
+                    <EditText
+                        android:id="@+id/payment_salt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:background="@drawable/editbox_bottom"/>
+
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/payment_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Save"
+                    android:background="@color/actionbar_background"
+                    android:textColor="#ffffff"
+                    android:padding="4dp"
+                    android:layout_margin="10dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/link_layout"
+
+                    >
+                    <TextView
+                        android:id="@+id/mtextview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Test link"/>
+                    <TextView
+                        android:id="@+id/payment_link"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:hint="test link"
+                        android:padding="4dp"
+                        android:background="@drawable/editbox_bottom"/>
+
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/payment_activation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:visibility="gone"
+                    android:text="Activate Payment Gateway"/>
+
+
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/taxes_layout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/setting_tax_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/setting_tax_icon"
+                    android:text="Taxes "
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/setting_tax_icon"
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_marginStart="12dp"
+                    android:src="@drawable/tax"
+                    android:layout_alignBottom="@+id/setting_tax_title"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/list_divider_color" />
+
+            <RelativeLayout
+                android:id="@+id/other_charges_layout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/other_charges_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/other_charges_icon"
+                    android:text="Other Charges "
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/other_charges_icon"
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_marginStart="12dp"
+                    android:src="@drawable/chrg"
+                    android:layout_alignBottom="@+id/other_charges_title"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/list_divider_color" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <!-- <include
+         android:id="@+id/include_setting"
+         layout="@layout/pos_bottom_bar_layout"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/footer_height"
+         android:visibility="gone"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentLeft="true" />-->
+
+
+</RelativeLayout>

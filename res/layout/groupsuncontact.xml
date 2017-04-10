@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/school"
+    android:orientation="vertical" >
+
+
+
+    <ImageButton
+        android:id="@+id/buttonadd"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="#ECE2CF"
+        android:padding="3dp"
+        android:src="@drawable/add_res_con" />
+
+<TextView
+        android:id="@+id/textView1"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:background="#ECE2CF"
+        android:layout_height="wrap_content"
+        android:text="Click To Add" />
+
+<TableRow
+    android:id="@+id/tableRow1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+</TableRow>
+
+    
+    <ListView
+        android:id="@+id/listViewgroupall"
+        android:layout_width="fill_parent"
+        android:layout_height="433dp" >
+    </ListView>
+
+</LinearLayout>

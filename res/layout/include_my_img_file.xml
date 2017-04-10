@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/myattch_imgfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/myattch_img"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:gravity="left"
+            android:scaleType="centerCrop"
+            android:src="@drawable/no_video" />
+
+        <ProgressBar
+            android:id="@+id/attch_myimg_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+        
+         
+          <TextView 
+              android:id="@+id/retry_btn_image"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Retry"
+              android:paddingLeft="15dp"
+              android:paddingRight="15dp"
+              android:paddingTop="10dp"
+              android:paddingBottom="10dp"
+              android:background="@drawable/roundcorner_chatbg"
+              android:gravity="center"
+              android:layout_centerInParent="true"
+               android:visibility="gone"
+              android:textStyle="bold"
+              android:textColor="@android:color/darker_gray"
+              />
+        
+        
+    </RelativeLayout>
+
+</RelativeLayout>

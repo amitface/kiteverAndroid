@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:orientation="vertical" >
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        
+        >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        >
+    
+    <sms19.inapp.msg.CircularImageView 
+        android:id="@+id/imageview"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/profile_pic"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center_horizontal"
+        />
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload your group image"
+        android:textColor="#E46C22"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        
+        />
+    
+    <Button 
+        android:id="@+id/browser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Browse"
+        android:textColor="@color/chat_action_bar_bg"
+        android:background="@drawable/browse_bg"
+        android:layout_gravity="center_horizontal"
+         android:layout_marginTop="10dp"
+        />
+    
+    <EditText 
+          android:id="@+id/edt_groupname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type your group name here"
+         android:layout_marginTop="15dp"
+        android:textColorHint="@android:color/black" 
+        android:backgroundTint="#000"
+        android:text=""
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:drawablePadding="10dp"
+       
+        />
+    
+    <LinearLayout 
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        >
+        
+         <Button 
+          android:id="@+id/create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Create"
+        android:textColor="#fff"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/create_bg"
+        android:layout_gravity="center_horizontal"
+         android:layout_marginTop="10dp"
+        />
+        
+         <Button 
+          android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Cancel"
+        android:layout_marginLeft="5dp"
+        android:textColor="#fff"
+        android:background="@drawable/cancel_bg"
+        android:layout_gravity="center_horizontal"
+         android:layout_marginTop="10dp"
+        />
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

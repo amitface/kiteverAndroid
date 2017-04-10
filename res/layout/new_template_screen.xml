@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <GridView
+        android:id="@+id/gridTemplate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnCustomGrid"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:divider="@drawable/dividerlist"
+        android:dividerHeight="2dp"
+        android:numColumns="2"
+        android:clipToPadding="false"
+        android:paddingBottom="50dp"
+        android:scrollbars="horizontal" >
+    </GridView>
+
+    <Button
+        android:id="@+id/btnCustomGrid"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#066966"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="Add Custom Template"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

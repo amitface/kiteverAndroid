@@ -1,0 +1,161 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.butterknife'
+
+
+
+android {
+    signingConfigs {
+        config {
+
+        }
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    useLibrary 'org.apache.http.legacy'
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+
+    dexOptions {
+        javaMaxHeapSize "2g"
+    }
+
+    compileSdkVersion 23
+    buildToolsVersion '23.0.3'
+    defaultConfig {
+        minSdkVersion 14 //lower than 14 doesn't support multidex
+        targetSdkVersion 23
+        versionCode 9
+        versionName "2.1"
+        // Enabling multidex support.
+        multiDexEnabled true
+        signingConfig signingConfigs.config
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+
+        kitever {
+            res.srcDirs = ['flavour/kitever/res']
+            resources.srcDirs = ['flavour/kitever/res']
+            java.srcDirs = ['flavour/kitever/src']
+            aidl.srcDirs = ['flavour/kitever/src']
+        }
+        RoyalPlaza {
+            res.srcDirs = ['flavour/RoyalPlaza/res']
+            resources.srcDirs = ['flavour/RoyalPlaza/res']
+            java.srcDirs = ['flavour/RoyalPlaza/src']
+            aidl.srcDirs = ['flavour/RoyalPlaza/src']
+        }
+
+        Testkitever {
+            res.srcDirs = ['flavour/Testkitever/res']
+            resources.srcDirs = ['flavour/Testkitever/res']
+            java.srcDirs = ['flavour/Testkitever/src']
+            aidl.srcDirs = ['flavour/Testkitever/src']
+        }
+        Stagekitever {
+            res.srcDirs = ['flavour/Stagekitever/res']
+            resources.srcDirs = ['flavour/Stagekitever/res']
+            java.srcDirs = ['flavour/Stagekitever/src']
+            aidl.srcDirs = ['flavour/Stagekitever/src']
+        }
+
+        // Move the tests to tests/java, tests/res, etc...
+        instrumentTest.setRoot('tests')
+
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+
+    productFlavors {
+        RoyalPlaza {
+            minSdkVersion 14
+            applicationId 'com.hoteltheroyalplaza.android'
+            targetSdkVersion 23
+            signingConfig signingConfigs.config
+        }
+
+        kitever {
+            minSdkVersion 14
+            applicationId 'com.kitever.android'
+            targetSdkVersion 23
+        }
+
+        gangajalro {
+            minSdkVersion 14
+            applicationId 'com.gangajal.ro'
+            targetSdkVersion 23
+        }
+
+        Testkitever {
+            minSdkVersion 14
+            applicationId 'com.testkitever.android'
+            targetSdkVersion 23
+        }
+
+        Stagekitever {
+            minSdkVersion 14
+            applicationId 'com.stagekitever.android'
+            targetSdkVersion 23
+        }
+    }
+}
+
+
+buildscript {
+    repositories {
+//        jcenter()
+//        maven { url "https://jitpack.io" }
+        mavenCentral()
+//        maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.3'
+        classpath 'com.google.gms:google-services:3.0.0'
+        classpath 'com.jakewharton:butterknife-gradle-plugin:8.5.1'
+    }
+}
+
+dependencies {
+    /*compile 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'*/
+    compile fileTree(include: '*.jar', dir: 'libs')
+    compile project(':simple-crop-image-lib')
+    compile project(':TwoWayView')
+
+    //    compile 'com.google.android.gms:play-services-gcm:10.2.0'
+//    compile 'com.github.chrisbanes.actionbarpulltorefresh:extra-abc:+'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.google.android.gms:play-services:10.2.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:cardview-v7:23.4.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.google.android.gms:play-services-analytics:10.2.0'
+}
+
+apply plugin: 'com.google.gms.google-services'

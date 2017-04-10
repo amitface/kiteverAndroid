@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tes_mesg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Create template"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/mssagecustom"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/whitebackgroundcurved"
+        android:digits="0,1,2,3,4,5,6,7,8,9,.,@,$,*,(,),!,?,:,;,&apos;,+,-,/,\,ABCDEFGHIJKLMNOPQRSTUVWXYZ ,qwertzuiopasdfghjklyxcvbnm"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Type Text Here"
+        android:inputType="textMultiLine"
+        android:maxLength="138"
+        android:textColor="#000000"
+        android:textStyle="bold" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/cutommsgsend"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#066966"
+        android:gravity="center"
+        android:text="Send Message"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/toatalcountw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:text="0"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView56565"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/toatalcountw"
+        android:layout_alignBottom="@+id/toatalcountw"
+        android:layout_toRightOf="@+id/toatalcountw"
+        android:text="/138"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mssagecustom"
+        android:layout_below="@+id/mssagecustom"
+        android:layout_marginTop="18dp"
+        android:text="Characters Count"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/txt_message_custom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:text="The SMS credits balance is deducted as per the caracter count of ths message. A custom template can be of max 138 character and can be sent to max 10 recipients at once. Each message has your registered mobile no. suffixed"
+        android:textColor="#ABAEAE" />
+
+</RelativeLayout>

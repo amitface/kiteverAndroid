@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+   android:minHeight="50dp"
+    android:elevation="5dp"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+          android:minHeight="50dp"
+        android:gravity="center"
+        android:background="@drawable/border_black"
+        android:orientation="horizontal"  
+        android:layout_centerVertical="true"    
+        android:weightSum="5" >
+
+        <TextView
+            android:id="@+id/cat_name_val"
+             android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center_horizontal"            
+            android:text="fsdsdf" />
+
+        <TextView
+            android:id="@+id/parent_cat_val"
+             android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center_horizontal"
+            android:text="hdfjkd" />
+
+        <TextView
+            android:id="@+id/type_val"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="type" />
+
+           <ImageView
+                android:id="@+id/activate_category"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:src="@drawable/switch_off"
+                android:padding="5dp"
+                />
+        
+        <!--  <LinearLayout
+            android:id="@+id/edit_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"                
+            android:layout_weight="1.5"
+              android:paddingLeft="2dp"
+            android:paddingRight="2dp"    
+              android:gravity="center_horizontal" 
+            android:orientation="horizontal" >
+         
+           <TextView
+            android:id="@+id/activate_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"  
+            android:textSize="16sp" 
+            android:padding="5dp"
+            android:textColor="#606060"
+              android:gravity="center_horizontal"
+            android:text="@string/check_circle" />
+
+
+           
+            <TextView
+            android:id="@+id/edit_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="16sp"      
+              android:gravity="center_horizontal"
+              android:textColor="#489800"     
+            android:text="@string/edit_pen" />
+                    
+         <TextView
+            android:id="@+id/delete_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"        
+              android:gravity="center_horizontal"
+            android:textSize="16sp"
+            android:textColor="#c63929"
+            android:text="@string/trash_icon"  />
+        
+        </LinearLayout>-->
+
+
+    </LinearLayout>
+
+</RelativeLayout>

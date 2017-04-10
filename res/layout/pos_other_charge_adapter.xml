@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="50dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:orientation="horizontal"
+    android:paddingLeft="0dp"
+    android:id="@+id/otc_adapter_layout"
+    android:background="@drawable/border_black"
+    android:elevation="5dp"
+    android:weightSum="4">
+
+    <TextView
+        android:id="@+id/other_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Charge" />
+
+    <TextView
+        android:id="@+id/other_amount"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Amount" />
+
+
+
+</LinearLayout><!--
+<TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Action" /> -->
+
+    <!--<FrameLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="5dp"-->
+    <!--android:text="Amount">-->
+    <!--<ImageView-->
+    <!--android:id="@+id/charges_action"-->
+    <!--android:layout_width="24dp"-->
+    <!--android:layout_height="24dp"-->
+    <!--android:src="@drawable/action"-->
+    <!--android:layout_gravity="center" />-->
+    <!--</FrameLayout>-->

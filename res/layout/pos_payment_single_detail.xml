@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardSimpleBarGraph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardBackgroundColor="@android:color/white"
+            card_view:cardElevation="2sp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:padding="5dp">
+
+                <com.kitever.app.context.CircleImageView
+                    android:id="@+id/pos_payment_item_image"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/no_image"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/pos_payment_profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pos_payment_item_image"
+                    android:text="Rohan Pandey"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:id="@+id/pos_payment_contact_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="25"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Contact Name :  Amit Delhi"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardSimpleBarGraph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardBackgroundColor="@android:color/white"
+            card_view:cardElevation="2sp"
+            card_view:cardUseCompatPadding="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:layout_weight=".7"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/pos_payment_contact_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="25"
+                        android:text="Number : +919910197940"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/pos_payment_item_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="OrderCode: -16-17-069"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/pos_payment_mop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="25"
+                        android:text="MOP :"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/pos_payment_paid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="25"
+                        android:text="Paid :"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/pos_payment_bank"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="25"
+                        android:text="Bank : "
+                        android:visibility="gone"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/pos_payment_chq"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="25"
+                        android:visibility="gone"
+                        android:text="Chq No. : "
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/pos_payment_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="25"
+                        android:text="Date :"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:id="@+id/pos_payment_remarks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Remarks :"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/pdfviewPayment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pdficon"
+                    android:layout_weight=".3"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/list_divider_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="MOP"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Paid"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Bank"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Chq No."
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Date"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="3dp"
+            android:background="@color/primary_dark_material_dark"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/pos_payment_detail_listview"
+            android:layout_width="match_parent"
+            android:layout_height="242dp"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="3dp"
+            android:background="@color/primary_dark_material_dark"
+            android:visibility="gone" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="1.5">
+
+            <LinearLayout
+                android:id="@+id/pos_payment_dialog_layout_sms"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="2dp"
+                android:layout_weight=".3"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum=".5">
+
+                <ImageView
+                    android:id="@+id/pos_payment_dialog_image_sms"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".2"
+                    android:src="@drawable/checkbox_blank_settings" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/pos_payment_dialog_image_sms"
+                    android:layout_weight=".3"
+                    android:gravity="center"
+                    android:text="Sms" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pos_payment_dialog_layout_mail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="2dp"
+                android:layout_weight=".3"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum=".5">
+
+                <ImageView
+                    android:id="@+id/pos_payment_dialog_image_mail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".2"
+                    android:src="@drawable/checkbox_blank_settings" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="1dp"
+                    android:layout_toRightOf="@+id/pos_payment_dialog_image_mail"
+                    android:layout_weight=".3"
+                    android:text="Mail" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pos_payment_dialog_layout_print"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="2dp"
+                android:layout_weight=".3"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="invisible"
+                android:weightSum=".5">
+
+                <ImageView
+                    android:id="@+id/pos_payment_dialog_image_print"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".2"
+                    android:src="@drawable/checkbox_blank_settings"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="2dp"
+                    android:layout_toRightOf="@+id/pos_payment_dialog_image_print"
+                    android:layout_weight=".3"
+                    android:text="Download"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/pos_payment_dialog_button_send"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="6dp"
+                android:layout_weight=".6"
+                android:background="@drawable/block_user"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Send"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="3dp"
+            android:background="@color/divider_color" />
+
+        <Button
+            android:id="@+id/pos_payment_detail_close"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/template_round_stoke"
+            android:padding="2dp"
+            android:text="Close"
+            android:textAllCaps="false"
+            android:textColor="@color/primary_material_dark"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="10dp"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:id="@+id/mTopLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        >
+        
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_weight="4.2"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <FrameLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+            <ImageView 
+                android:id="@+id/profile_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/chat_user"
+                
+                />
+            <ImageView 
+                android:id="@+id/status_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/k_circle"
+                android:layout_gravity="bottom"
+                
+                />
+            </FrameLayout>
+            
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                >
+                <TextView 
+                    android:id="@+id/name"
+                    android:text="Jhon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    />
+                <TextView 
+                    android:id="@+id/msg"
+                    android:text="Ok i am waiting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/new_actionbar_background"
+                    />
+            </LinearLayout>
+            
+            
+        </LinearLayout>
+        
+        
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_weight=".8"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+              <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:gravity="left|center_vertical"
+                >
+                <TextView 
+                    android:id="@+id/time"
+                    android:text="14:12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    />
+                <TextView 
+                    android:id="@+id/msg_counter"
+                    android:text="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:background="@drawable/red_circle"
+                    android:padding="3dp"
+                    android:textColor="@android:color/white"
+                    />
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+
+</LinearLayout>

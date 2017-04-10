@@ -1,0 +1,73 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="4" >
+
+            <CheckBox
+                android:id="@+id/checkBoxContact"
+                android:layout_marginLeft="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:button="@drawable/chk_box_new"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="0.59"
+                android:text="Name"
+                android:textColor="#D8DADA"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/textViewMObile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.68"
+                android:inputType="number"
+                android:text="1234567890"
+                android:textColor="#D8DADA"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/editContactImage"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:src="@drawable/edit_icon" />
+
+            <ImageView
+                android:id="@+id/deleteContactImage"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1"
+                android:src="@drawable/delete_icon" />
+        </TableRow>
+    </LinearLayout>
+
+</ScrollView>

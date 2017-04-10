@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/touchfeedback"
+    android:padding="8dp"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="left|center"
+        android:padding="8dp"
+        android:text="name"
+        android:textColor="#236966"
+        android:textSize="@dimen/adapter_text_size"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/touchfeedback"
+        android:padding="8dp"
+        android:src="@drawable/ic_mode_edit_black_24dp" />
+    
+    
+    <ImageView
+        android:id="@+id/del_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/touchfeedback"
+        android:padding="8dp"
+        android:src="@drawable/ic_delete_black_24dp" />
+
+</LinearLayout>

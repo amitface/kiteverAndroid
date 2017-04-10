@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/ingpadd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="83dp"
+            android:src="@drawable/group_icon" />
+
+        <EditText
+            android:id="@+id/editTextGroupName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_avg"
+            android:layout_marginRight="@dimen/margin_avg"
+            android:layout_marginTop="@dimen/margin_avg"
+            android:background="@drawable/customedit"
+            android:hint="Group Name"
+            android:inputType="textPersonName"
+            android:paddingBottom="@dimen/padding_avg"
+            android:paddingLeft="@dimen/padding_avg"
+            android:paddingTop="@dimen/padding_avg" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textViewCreateGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:paddingLeft="@dimen/padding_avg"
+            android:paddingRight="@dimen/padding_avg"
+            android:paddingTop="@dimen/padding_avg"
+            android:text="Groups added here are treated as broadcast groups.The broadcast groups as displayed in chat as per your plan."
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/color_primary"
+        android:text=">Add Group (Coming soon)"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+</RelativeLayout>

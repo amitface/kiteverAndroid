@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:id="@+id/page_main_layout">
+
+    <ListView 
+        android:id="@+id/brand_add_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    
+        <LinearLayout
+			        android:id="@+id/input_layout"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:weightSum="1"			        
+			        android:orientation="horizontal"
+			        android:layout_marginTop="10dp" >
+	        <ImageView
+			            android:id="@+id/icon"
+			            android:layout_width="0dp"
+			            android:layout_weight=".2"
+			            android:layout_height="wrap_content"
+			            android:layout_centerVertical="true"
+			            android:layout_marginLeft="10dp"
+			            android:src="@drawable/brand" />
+	
+		        <EditText
+		            android:id="@+id/brand_name1"		            
+		            android:layout_width="0dp"
+		            android:layout_height="wrap_content"
+			        android:layout_weight=".8"
+					android:background="@drawable/editbox_bottom"
+		            android:layout_centerVertical="true"
+		            android:layout_marginLeft="10dp"
+		            android:layout_marginRight="10dp"
+					android:maxLength="25"
+		            android:layout_toRightOf="@+id/icon1"
+		            />
+	    	</LinearLayout>
+
+        
+
+   
+    <Button
+            android:id="@+id/btn_update_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/block_user"
+            android:layout_alignParentBottom="true"   
+            android:text="Add Brand"
+            android:textColor="#fff" />
+      <include
+        android:visibility="gone"
+        layout="@layout/pos_bottom_bar_layout" />
+</RelativeLayout>
+
